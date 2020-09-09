@@ -7,21 +7,22 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default {
   components: {
     Header,
-    Footer
-  }
-};
+    Footer,
+  },
+}
 </script>
 
 <style lang="scss">
-@import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Open+Sans:wght@400;600;800&display=swap');
+
 html {
-  font-family: "Inter", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   box-sizing: border-box;
@@ -29,7 +30,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Inter var", sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -53,5 +54,12 @@ a {
   &:hover {
     border-bottom: 1.5px solid currentColor;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'IBM Plex Mono', monospace;
 }
 </style>
