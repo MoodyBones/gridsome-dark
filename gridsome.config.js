@@ -14,6 +14,7 @@ if (process.env.NODE_ENV === 'production')
 
 module.exports = {
   siteName: theme.site_name,
+  icon: './src/my-icon.svg',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
