@@ -13,19 +13,18 @@ module.exports = {
       options: {
         typeName: 'Project',
         path: 'projects/**/*.md',
-        route: '/:slug'
-      }
-    }
+      },
+    },
   ],
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: []
-    }
+      plugins: [],
+    },
   },
   devServer: {
     host: '0.0.0.0',
-    port: 8080
-  }
+    port: 8080,
+  },
 }
