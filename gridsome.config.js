@@ -16,6 +16,9 @@ module.exports = {
       },
     },
   ],
+  templates: {
+    Project: '/project/:year/:title',
+  },
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
