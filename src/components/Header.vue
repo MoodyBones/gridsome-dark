@@ -21,31 +21,36 @@
         <span v-if="!data.first_letter_only">{{ word }}</span>
       </span>
     </g-link>
-    <div class="contact">
+    <div class="contact flex">
       <a class="link" :href="`mailto:${data.email}`">say hi !</a>
+      <!-- <DarkLightToggle /> -->
     </div>
   </header>
 </template>
 
 <script>
-import data from "@/data/theme.json";
+import data from '@/data/theme.json'
+// import DarkLightToggle from '~/components/DarkLightToggle.vue'
 
 export default {
-  name: "Header",
+  name: 'Header',
   data() {
     return {
-      data
-    };
+      data,
+    }
   },
   computed: {
     siteName() {
-      return data.header_title.split(" ");
+      return data.header_title.split(' ')
     },
     multiLine() {
-      return this.siteName.length >= 1;
-    }
-  }
-};
+      return this.siteName.length >= 1
+    },
+  },
+  // components: {
+  //   DarkLightToggle,
+  // },
+}
 </script>
 
 <style lang="scss" scoped>
