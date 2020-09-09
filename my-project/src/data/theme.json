@@ -1,23 +1,28 @@
 {
-  "site_name": "DPT",
-  "header_title": "Darkfolio Portfolio Theme",
+  "site_name": "Mel Jones",
+  "header_title": "Portfolio",
   "first_letter_only": true,
-  "email": "nichlas@itsnwa.com",
+  "email": "jones.mel@gmail.com",
   "social": [
     {
       "channel": "twitter",
-      "handle": "nichlaswa",
+      "handle": "_moodybones",
       "link_text": "tw"
     },
     {
-      "channel": "instagram",
-      "handle": "its.nwa",
-      "link_text": "ig"
+      "channel": "codepen",
+      "handle": "MoodyBones",
+      "link_text": "cp"
     },
     {
       "channel": "github",
-      "handle": "itsnwa",
+      "handle": "MoodyBones",
       "link_text": "gh"
+    },
+    {
+      "channel": "linkedin",
+      "handle": "mel-jones-4a5835182",
+      "link_text": "li"
     }
   ]
 }
