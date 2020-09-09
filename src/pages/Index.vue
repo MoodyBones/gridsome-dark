@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <Hero />
     <section class="projects">
       <article
         @click="goTo($event, project.node.path)"
@@ -40,33 +41,35 @@ query Projects {
 </page-query>
 
 <script>
-import ProjectMeta from "@/components/ProjectMeta";
+import ProjectMeta from '@/components/ProjectMeta'
+import Hero from '@/components/Hero'
 
 export default {
   components: {
-    ProjectMeta
+    ProjectMeta,
+    Hero,
   },
   metaInfo: {
-    titleTemplate: require("../data/theme.json").site_name
+    titleTemplate: require('../data/theme.json').site_name,
   },
   methods: {
     goTo(event, route) {
-      const distanceScrolled = window.pageYOffset;
-      const elementPosition = event.target.getBoundingClientRect().top;
-      const totalOffset = distanceScrolled + elementPosition;
-      const finalPosition = totalOffset - 167;
+      const distanceScrolled = window.pageYOffset
+      const elementPosition = event.target.getBoundingClientRect().top
+      const totalOffset = distanceScrolled + elementPosition
+      const finalPosition = totalOffset - 167
 
       // Scroll window so that the thumbnail is 12rem from the
       // top of the browser window, this will make a seamless transition.
-      window.scrollTo({ top: finalPosition, behavior: "smooth" });
+      window.scrollTo({ top: finalPosition, behavior: 'smooth' })
 
       // Now, navigate to the project page
       setTimeout(() => {
-        this.$router.push(route);
-      }, 450);
-    }
-  }
-};
+        this.$router.push(route)
+      }, 450)
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
