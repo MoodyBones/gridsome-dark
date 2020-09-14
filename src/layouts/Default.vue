@@ -56,10 +56,8 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'IBM Plex Mono', monospace;
+.layout {
+  display: flex;
+  flex-direction: column;
 }
 </style>
