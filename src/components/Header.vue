@@ -1,9 +1,11 @@
 <template>
-  <header class="header">
+  <header
+    class="header z-50 flex justify-between items-start px-5 sm:px-10 py-6"
+  >
     <g-link
       to="/"
       tag="h1"
-      class="name"
+      class="name font-mono lowercase tracking-wide"
       :class="{ first: data.first_letter_only }"
     >
       <span
@@ -21,9 +23,9 @@
         <span v-if="!data.first_letter_only">{{ word }}</span>
       </span>
     </g-link>
-    <div class="contact flex">
+    <div class="contact flex pt-2">
       <svg
-        class="smiley w-6 h-6 mr-2 opacity-0 transition-opacity ease-in duration-150"
+        class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-in duration-150"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -36,7 +38,7 @@
           d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         ></path>
       </svg>
-      <a class="link" :href="`mailto:${data.email}`">say hi !</a>
+      <a class="link uppercase" :href="`mailto:${data.email}`">say hi !</a>
       <!-- <DarkLightToggle /> -->
     </div>
   </header>
@@ -69,12 +71,8 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 4rem 2rem 5rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  position: sticky;
+  top: 0;
   z-index: 100;
   opacity: 1;
   mix-blend-mode: difference;
@@ -91,8 +89,9 @@ export default {
   }
 }
 .name {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
+  line-height: 1;
   user-select: none;
   margin: 0;
   cursor: pointer;
