@@ -27,13 +27,6 @@ module.exports = {
   templates: {
     Project: '/project/:year/:title',
   },
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: [],
-    },
-  },
   devServer: {
     host: '0.0.0.0',
     port: 8080,
@@ -43,6 +36,19 @@ module.exports = {
       postcss: {
         plugins: postcssPlugins,
       },
+    },
+  },
+  transformers: {
+    remark: {
+      plugins: [
+        [
+          'gridsome-plugin-remark-shiki',
+          { theme: 'Material-Theme-Palenight', skipInline: true },
+        ],
+      ],
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
     },
   },
 }
