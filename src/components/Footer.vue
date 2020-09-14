@@ -1,37 +1,52 @@
 <template>
   <footer class="footer">
-    <div class="to-top" @click="scrollTopTop">-></div>
+    <div class="to-top link-bounce" @click="scrollTopTop">
+      <svg
+        class="w-10 h-10"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 7l4-4m0 0l4 4m-4-4v18"
+        ></path>
+      </svg>
+    </div>
     <div class="social">
       <a
-        class="channel"
+        class="channel link-bounce"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
       >
-        {{ social.link_text }}
+        <font-awesome :icon="['fab', `${social.channel}`]" />
       </a>
     </div>
   </footer>
 </template>
 
 <script>
-import data from "@/data/theme.json";
+import data from '@/data/theme.json'
 
 export default {
   data() {
     return {
-      data
-    };
+      data,
+    }
   },
   methods: {
     scrollTopTop() {
       window.scrollTo({
         top: 0,
-        behavior: "smooth"
-      });
-    }
-  }
-};
+        behavior: 'smooth',
+      })
+    },
+  },
+}
 </script>
 
 <style lang="scss">
@@ -42,31 +57,36 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   padding: 0 2rem;
   z-index: 100;
   mix-blend-mode: difference;
 }
 .to-top {
-  transform: rotate(-90deg);
   user-select: none;
   cursor: pointer;
-  border: 2px solid transparent;
   text-align: center;
   font-weight: 700;
   line-height: 0;
   padding: 1rem 0.5rem;
-  &:hover {
-    border: 2px solid white;
-  }
 }
 .social {
+  display: flex;
   .channel {
+    display: block;
+    font-size: 2rem;
     margin-right: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    padding: 1rem 0.75rem;
     &:last-of-type {
       margin: 0;
     }
+  }
+}
+
+.link-bounce {
+  @apply border-transparent transition-all duration-200 ease-in;
+  &:hover {
+    @apply transform -translate-y-2 border-transparent;
   }
 }
 </style>
