@@ -17,6 +17,7 @@ module.exports = {
     'g-image--loaded',
     /svg.*/,
     /fa.*/,
+    'font-awesome',
   ],
   extractors: [
     {
