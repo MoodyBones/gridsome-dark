@@ -23,10 +23,7 @@
       max-w-sm p-16
       mx-auto"
     >
-      <g-image
-        src="~/resources/hand-eva-goncalves.png"
-        class="w-56 h-auto z-20"
-      >
+      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-20">
       </g-image>
     </div>
     <div
