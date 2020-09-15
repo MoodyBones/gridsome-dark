@@ -3,10 +3,13 @@
   "header_title": "Mel Jones",
   "first_letter_only": true,
   "email": "jones.mel@gmail.com",
-  "hero_title": "I love learning and building WEB STUFF!",
-  "hero_subtitle1": "I'm inspired by the history of coders, engineers, entrepreneurs, and visionaries who helped create and shape the modern Web.",
-  "hero_subtitle2": "So I got involved in the community and taught myself to code.",
-  "hero_subtitle3": "I'm Mel Jones, a Front-end Developer based in Berlin. Welcome to my little slice of the Web.",
+  "hero_title": "I love learning and building Web Stuff!",
+
+  "hero_subtitle1": "Software is for Humans and I believe in the power that the Web has to connect and educate us.",
+  "hero_subtitle2": "I'm inspired by the history of the Women & Men: coders, engineers, entrepreneurs, and visionaries who helped create and shape the modern Web.",
+  "hero_subtitle3": "The Web is for everyone and I wanted to contribute my part, so I got involved in the community and taught myself to code",
+  "hero_subtitle4": "Heya world! I'm Mel Jones. Welcome to my little slice of the Web.  ✨ 👩🏻‍💻 🌴 🚀",
+  "hero_subtitle5": "Heya world! I'm Mel Jones, an Australian-born & Berlin-based Front-end Developer. ",
   "social": [
     {
       "channel": "twitter",
