@@ -11,7 +11,7 @@
       flex items-center justify-center"
     >
       <h1
-        class="text-4xl sm:text-6xl lg:text-9xl font-mono font-black text-center text-opacity-75 text-gray-900 p-24"
+        class="text-6xl lg:text-9xl font-mono font-black text-center text-opacity-75 text-gray-900 p-24"
         v-html="data.hero_title"
       ></h1>
     </div>
@@ -33,9 +33,13 @@
       class="hero-subheading-wrapper z-50 
       row-span-3 md:col-start-3 lg:col-span-1
       rounded-sm bg-gray-100 text-gray-900 
-      px-4 py-10 md:px-10 "
+      opacity-95
+      px-4 py-10 md:px-10 
+      flex justify-center"
     >
-      <h2 class="text-lg md:text-xl max-w-sm font-mono font-normal">
+      <h2
+        class="text-lg md:text-xl max-w-sm font-mono font-normal text-opacity-75"
+      >
         {{ data.hero_subtitle1 }}
         <br />
         <br />
@@ -93,6 +97,7 @@ styles for text with bg image clip
     #747d8c,
     #a4b0be
   );
+  mix-blend-mode: difference;
   /* background-image: radial-gradient(
     circle at top right,
     #fab1a0,
@@ -118,7 +123,6 @@ styles for text with bg image clip
 
 .hero-image-wrapper {
   animation: shimmy 3s infinite alternate;
-  mix-blend-mode: difference;
 }
 
 .hero-subheading-wrapper {

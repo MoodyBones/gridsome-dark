@@ -6,7 +6,7 @@ module.exports = {
       body: ['Open Sans', 'sans-serif'],
     },
     fontSize: {
-      sm: ['.75rem', '16px'],
+      xs: ['.75rem', '16px'],
       sm: ['.875rem', '20px'],
       base: ['1rem', '24px'],
       lg: ['1.125rem', '28px'],
@@ -19,7 +19,14 @@ module.exports = {
       '8xl': ['6rem', '32px', { letterSpacing: '-0.025em' }],
       '9xl': ['7rem', { lineHeight: '75px', letterSpacing: '-0.05em' }],
     },
-    extend: {},
+    extend: {
+      opacity: {
+        '80': '.8',
+        '90': '.9',
+        '95': '.95',
+        '99': '.99',
+      },
+    },
   },
   variants: {},
   plugins: [],
