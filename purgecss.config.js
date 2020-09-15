@@ -15,9 +15,6 @@ module.exports = {
     'g-image',
     'g-image--lazy',
     'g-image--loaded',
-    /svg.*/,
-    /fa.*/,
-    'font-awesome',
   ],
   extractors: [
     {
