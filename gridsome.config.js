@@ -5,20 +5,23 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const theme = require('./src/data/theme.json')
 const tailwind = require('tailwindcss')
-const autoprefixer = require('autoprefixer')       
+const purgecss = require('@fullhuman/postcss-purgecss')
 
-const postcssPlugins = [ tailwind(), autoprefixer() ]
+const postcssPlugins = [tailwind()]
+
+if (process.env.NODE_ENV === 'production')
+  postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
   siteName: theme.site_name,
   icon: './src/favicon.svg',
   css: {
     loaderOptions: {
-          postcss: {
-            plugins: postcssPlugins,
-        },
+      postcss: {
+        plugins: postcssPlugins,
+      },
     },
-},
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',

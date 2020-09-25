@@ -1,27 +1,5 @@
 module.exports = {
-  purge: {
-    content: [
-      './src/**/*.vue',
-      './src/**/*.js',
-      './src/**/*.jsx',
-      './src/**/*.html',
-      './src/**/*.pug',
-      './src/**/*.md',
-    ],
-    // These options are passed through directly to PurgeCSS
-    options: {
-      whitelist: [
-        'svg-inline--fa',
-        'body',
-        'html',
-        'img',
-        'a',
-        'g-image',
-        'g-image--lazy',
-        'g-image--loaded',
-      ],
-    },
-  },
+  purge: [],
   theme: {
     fontFamily: {
       mono: ['IBM Plex Mono', 'monospace'],
