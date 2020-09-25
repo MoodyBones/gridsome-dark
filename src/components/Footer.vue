@@ -86,9 +86,9 @@ export default {
 }
 
 .link-bounce {
-  @apply border-transparent transition-all duration-500 ease-in-out;
+  @apply transition-all duration-500 ease-in-out;
   &:hover {
-    @apply transform scale-150 -translate-y-2 border-transparent;
+    @apply transform scale-150 -translate-y-2;
   }
 }
 </style>
