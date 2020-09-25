@@ -79,6 +79,9 @@ export default {
     &:last-of-type {
       margin: 0;
     }
+    svg {
+      @apply w-10 h-10;
+    }
   }
 }
 
