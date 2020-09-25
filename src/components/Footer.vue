@@ -12,7 +12,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-          d="M8 7l4-4m0 0l4 4m-4-4v18"
+          d="M5 11l7-7 7 7M5 19l7-7 7 7"
         ></path>
       </svg>
     </div>
@@ -74,7 +74,6 @@ export default {
   display: flex;
   .channel {
     display: block;
-    font-size: 2rem;
     margin-right: 1rem;
     padding: 1rem 0.75rem;
     &:last-of-type {
@@ -84,9 +83,9 @@ export default {
 }
 
 .link-bounce {
-  @apply border-transparent transition-all duration-200 ease-in;
+  @apply border-transparent transition-all duration-500 ease-in-out;
   &:hover {
-    @apply transform -translate-y-2 border-transparent;
+    @apply transform scale-150 -translate-y-2 border-transparent;
   }
 }
 </style>
