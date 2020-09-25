@@ -11,6 +11,7 @@ module.exports = {
     // These options are passed through directly to PurgeCSS
     options: {
       whitelist: [
+        'svg-inline--fa',
         'body',
         'html',
         'img',
@@ -18,7 +19,7 @@ module.exports = {
         'g-image',
         'g-image--lazy',
         'g-image--loaded',
-      ]
+      ],
     },
   },
   theme: {
