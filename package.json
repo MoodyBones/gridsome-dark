@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0",
+    "gridsome": "^0.7.21",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "tailwindcss": "^1.8.5"
   },
