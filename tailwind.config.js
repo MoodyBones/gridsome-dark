@@ -1,11 +1,6 @@
 module.exports = {
   purge: [],
   theme: {
-    colors: {
-      primary: 'var(--color-primary)',
-      secondary: 'var(--color-secondary)',
-      danger: 'var(--color-danger)',
-    },
     fontFamily: {
       mono: ['var(--font-mono)'],
       sans: ['var(--font-sans)'],
@@ -21,20 +16,23 @@ module.exports = {
       '2xl': ['1.5rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
       '3xl': ['2rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
       '4xl': ['2.25rem', { lineHeight: '26px', letterSpacing: '-0.05em' }],
-      '5xl': ['3rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
-      '6xl': ['4rem', { lineHeight: '43px', letterSpacing: '-0.05em' }],
-      '7xl': ['5rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
+      '5xl': ['3rem', { lineHeight: '45px', letterSpacing: '-0.025em' }],
+      '6xl': ['4rem', { lineHeight: '63px', letterSpacing: '-0.05em' }],
+      '7xl': ['5rem', { lineHeight: '60px', letterSpacing: '-0.025em' }],
       '8xl': ['6rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
       '9xl': ['7rem', { lineHeight: '75px', letterSpacing: '-0.05em' }],
     },
     extend: {
-      opacity: {
-        '80': '.8',
-        '90': '.9',
-        '95': '.95',
-        '99': '.99',
+      boxShadow: {
+        'solid-primary': '10px 5px var(--color-primary)',
+        'solid-black': '10px 5px black',
+        'solid-white': '10px 5px white',
       },
       colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        danger: 'var(--color-danger)',
+        background: 'var(--color-background)',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
@@ -46,6 +44,12 @@ module.exports = {
           '800': '#424242',
           '900': '#212121',
         },
+      },
+      opacity: {
+        '80': '.8',
+        '90': '.9',
+        '95': '.95',
+        '99': '.99',
       },
     },
   },
