@@ -2,7 +2,7 @@
   <Layout>
     <Hero />
     <section class="projects">
-      <article
+      <!-- <article
         @click="goTo($event, project.node.path)"
         class="project"
         v-for="project in $page.projects.edges"
@@ -18,8 +18,9 @@
           :categories="project.node.categories"
           :year="project.node.year"
         />
-      </article>
+      </article> -->
     </section>
+    <Faq />
   </Layout>
 </template>
 
@@ -43,11 +44,13 @@ query Projects {
 <script>
 import ProjectMeta from '@/components/ProjectMeta'
 import Hero from '@/components/Hero'
+import Faq from '@/components/Faq'
 
 export default {
   components: {
     ProjectMeta,
     Hero,
+    Faq,
   },
   metaInfo: {
     titleTemplate: require('../data/theme.json').site_name,
