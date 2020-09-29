@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="to-top link-bounce" @click="scrollTopTop">
       <svg
-        class="w-10 h-10"
+        class="w-8 h-8"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -68,27 +68,27 @@ export default {
   text-align: center;
   font-weight: 700;
   line-height: 0;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.25rem;
 }
 .social {
   display: flex;
   .channel {
     display: block;
-    margin-right: 1rem;
-    padding: 1rem 0.75rem;
+    margin-right: 2rem;
+    padding: 0.5rem 0.25rem;
     &:last-of-type {
       margin: 0;
     }
     svg {
-      @apply w-10 h-10;
+      @apply w-8 h-8;
     }
   }
 }
 
 .link-bounce {
-  @apply transition-all duration-500 ease-in-out;
+  @apply transition-all duration-500 ease-in-out border-none;
   &:hover {
-    @apply transform scale-150 -translate-y-2;
+    @apply transform scale-150 -translate-y-2 border-none;
   }
 }
 </style>
