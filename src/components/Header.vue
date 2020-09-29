@@ -46,7 +46,6 @@
 
 <script>
 import data from '@/data/theme.json'
-// import DarkLightToggle from '~/components/DarkLightToggle.vue'
 
 export default {
   name: 'Header',
@@ -63,9 +62,6 @@ export default {
       return this.siteName.length >= 1
     },
   },
-  // components: {
-  //   DarkLightToggle,
-  // },
 }
 </script>
 
