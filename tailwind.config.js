@@ -12,10 +12,10 @@ module.exports = {
       sm: ['.875rem', '20px'],
       base: ['1rem', '24px'],
       lg: ['1.125rem', '28px'],
-      xl: ['1.25rem', '32px'],
+      xl: ['1.25rem', '24px'], //faq questions
       '2xl': ['1.5rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
-      '3xl': ['2rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
-      '4xl': ['2.25rem', { lineHeight: '26px', letterSpacing: '-0.05em' }],
+      '3xl': ['2rem', { lineHeight: '26px', letterSpacing: '-0.025em' }], //faq questions md
+      '4xl': ['2.25rem', { lineHeight: '40px', letterSpacing: '0' }],
       '5xl': ['3rem', { lineHeight: '45px', letterSpacing: '-0.025em' }],
       '6xl': ['4rem', { lineHeight: '63px', letterSpacing: '-0.05em' }],
       '7xl': ['5rem', { lineHeight: '60px', letterSpacing: '-0.025em' }],
@@ -24,9 +24,9 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'solid-primary': '10px 10px var(--color-primary)',
-        'solid-black': '10px 10px black',
-        'solid-white': '10px 10px white',
+        'solid-primary': '0.25em 0.25em var(--color-primary)',
+        'solid-black': '0.3em 0.3em black',
+        'solid-white': '0.25em 0.25em white',
       },
       colors: {
         primary: 'var(--color-primary)',
@@ -45,11 +45,20 @@ module.exports = {
           '900': '#212121',
         },
       },
+      gridTemplateColumns: {
+        '1fr-auto': '1fr auto',
+        '1fr-11fr': '1fr 11fr',
+        'auto auto': 'auto auto',
+      },
       opacity: {
         '80': '.8',
         '90': '.9',
         '95': '.95',
         '99': '.99',
+      },
+      width: {
+        'min-content': 'min-content',
+        'max-content': 'max-content',
       },
     },
   },

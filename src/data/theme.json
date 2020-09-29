@@ -31,5 +31,27 @@
       "handle": "in/mel-jones-4a5835182",
       "link_text": "li"
     }
-  ]
+  ],
+  "faq": {
+    "title": "faqs",
+    "questions": [
+      [
+        "Who is Mel Jones",
+        "I am Mel Jones and I was born in Melbourne, Australia. A love of travel lead her to backpack around Europe and settle in Berlin in 2013"
+      ],
+      [
+        "What did you do before you learnt to code?",
+        "I have many years experience working in Customer Service, my first job was at McDonalds aged 15 :P! I spent many years climbing the fashion retail ladder, I loved working and managing teams, but fast fashion didn't make me happy. So I did some travelling and plenty of soul searching, and I have been working as noble bar lady."
+      ],
+      [
+        "How long have you been coding? and why did you start?",
+        "I started coding in high school, and continued for a year after graduation. But then I left to pursue fashion & customer Service. Late in 2018 I was having a conversation with a friend about the lack of diversity in Tech, and I thought hey I should try coding again. I did and immediately fell back in love. I've studying Frontend Development every since, close to 2 years now!"
+      ],
+      [
+        "What kind of code do like to write?",
+        "I love everything frontend! User centered design. I'm a big fan of CSS, I recently got into utility first and Tailwind. I love playing around and building complex layouts with grid & flexbox. I love animations, I used to make flash animations back in the day and would love to spend some more time studying web animations and performance. And I love Vuejs and their community, I'm teaching myself Vue 3 right now"
+      ]
+    ],
+    "answers": []
+  }
 }
