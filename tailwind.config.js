@@ -24,9 +24,9 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'solid-primary': '10px 5px var(--color-primary)',
-        'solid-black': '10px 5px black',
-        'solid-white': '10px 5px white',
+        'solid-primary': '10px 10px var(--color-primary)',
+        'solid-black': '10px 10px black',
+        'solid-white': '10px 10px white',
       },
       colors: {
         primary: 'var(--color-primary)',
