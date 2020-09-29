@@ -26,7 +26,9 @@
       <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-20">
       </g-image>
     </div>
-    <WorkTogether class="md:row-start-4 md:col-span-1" />
+    <WorkTogether
+      class="md:row-start-4 md:col-span-1 z-50 bg-background py-32 px-6"
+    />
     <div
       class="hero-subheading-wrapper z-50 
       row-span-3 md:col-start-2 lg:col-span-1
@@ -35,7 +37,7 @@
       px-4 py-10 md:px-10 
       flex justify-center"
     >
-      <h2 class="text-lg md:text-6xl font-sans text-opacity-75">
+      <h2 class="text-lg md:text-4xl font-sans text-opacity-75">
         {{ data.hero_subtitle1 }}
         <br />
         <br />
@@ -114,7 +116,7 @@ styles for text with bg image clip
     #f9f871
   ); */
   background-size: 400%;
-  /* animation: bg-animation 20s infinite alternate; */
+  animation: bg-animation 20s infinite alternate;
   h1 {
     width: min-content;
     /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
@@ -122,7 +124,7 @@ styles for text with bg image clip
 }
 
 .hero-image-wrapper {
-  /* animation: shimmy 3s infinite alternate; */
+  animation: shimmy 3s infinite alternate;
 }
 
 .hero-subheading-wrapper {
