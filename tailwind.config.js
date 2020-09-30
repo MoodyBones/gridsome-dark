@@ -1,26 +1,14 @@
 module.exports = {
   purge: [],
+  experimental: {
+    extendedFontSizeScale: true,
+  },
   theme: {
     fontFamily: {
       mono: ['var(--font-mono)'],
       sans: ['var(--font-sans)'],
       body: ['var(--font-body)'],
       display: ['var(--font-display)'],
-    },
-    fontSize: {
-      xs: ['.75rem', '16px'],
-      sm: ['.875rem', '20px'],
-      base: ['1rem', '24px'],
-      lg: ['1.125rem', '28px'],
-      xl: ['1.25rem', '24px'], //faq questions
-      '2xl': ['1.5rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
-      '3xl': ['2rem', { lineHeight: '26px', letterSpacing: '-0.025em' }], //faq questions md
-      '4xl': ['2.25rem', { lineHeight: '40px', letterSpacing: '0' }],
-      '5xl': ['3rem', { lineHeight: '45px', letterSpacing: '-0.025em' }],
-      '6xl': ['4rem', { lineHeight: '63px', letterSpacing: '-0.05em' }],
-      '7xl': ['5rem', { lineHeight: '60px', letterSpacing: '-0.025em' }],
-      '8xl': ['6rem', { lineHeight: '26px', letterSpacing: '-0.025em' }],
-      '9xl': ['7rem', { lineHeight: '75px', letterSpacing: '-0.05em' }],
     },
     extend: {
       boxShadow: {
