@@ -1,7 +1,7 @@
 <template>
-  <section id="faq-section" class="grid justify-center bg-gray-200">
+  <section id="faq-section" class="grid justify-center bg-gray-200 pb-40">
     <h2
-      class="text-8xl tracking-wide font-display font-bold text-background my-32"
+      class="text-8xl tracking-wide font-display font-bold text-background text-center my-24"
     >
       {{ data.faq.title | capitalizeHeading }}
     </h2>
@@ -25,8 +25,8 @@
         <span
           id="question"
           class="font-display font-bold text-xl md:text-3xl 
-          self-center
-        pr-6 py-3 "
+          self-center leading-snug
+        pr-6 py-4 "
         >
           {{ question[0] }}
         </span>
@@ -34,12 +34,22 @@
           :class="isOpen ? 'block' : 'hidden'"
           id="answer"
           class="bg-gray-100 col-span-2 
-          py-4 
-        grid grid-cols-1fr-11fr"
+          py-4 space-y-6
+        grid grid-cols-1fr-11fr
+        text-lg md:text-xl tracking-wide leading-loose pr-6"
         >
-          <span class="col-start-2 text-xl tracking-wide leading-loose pr-6 ">
+          <p class="col-start-2 ">
             {{ question[1] }}
-          </span>
+          </p>
+          <p v-if="question[2]" class="col-start-2">
+            {{ question[2] }}
+          </p>
+          <p v-if="question[3]" class="col-start-2 ">
+            {{ question[3] }}
+          </p>
+          <p v-if="question[4]" class="col-start-2 ">
+            {{ question[4] }}
+          </p>
         </div>
       </div>
     </div>

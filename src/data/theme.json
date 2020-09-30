@@ -36,22 +36,35 @@
     "title": "faqs",
     "questions": [
       [
-        "Who is Mel Jones",
-        "I am Mel Jones and I was born in Melbourne, Australia. A love of travel lead her to backpack around Europe and settle in Berlin in 2013"
+        "Who is Mel Jones?",
+        "I am Mel Jones and I'm a self-taught Front-end Developer. I grew up in Melbourne, but for 7 years, I've called Berlin my home."
       ],
       [
-        "What did you do before you learnt to code?",
-        "I have many years experience working in Customer Service, my first job was at McDonalds aged 15 :P! I spent many years climbing the fashion retail ladder, I loved working and managing teams, but fast fashion didn't make me happy. So I did some travelling and plenty of soul searching, and I have been working as noble bar lady."
+        "What is a Front-end Developer?",
+        "Is a computer programmer that specializes in client-side code for Websites and Web applications.  Our job is to convert data to a graphical interface, through the use of HTML, CSS, and JavaScript. To ensure that when the users open up the site they see the information in a format that is easy to read and relevant.",
+        "We write code so that you the user can view and interact with it on a web browser (Chrome, Firefox, Safari, etc.). For example I coded this dynamic website so that you can click and play and read and learn about me and what I do!"
       ],
       [
-        "How long have you been coding? and why did you start?",
-        "I started coding in high school, and continued for a year after graduation. But then I left to pursue fashion & customer Service. Late in 2018 I was having a conversation with a friend about the lack of diversity in Tech, and I thought hey I should try coding again. I did and immediately fell back in love. I've studying Frontend Development every since, close to 2 years now!"
+        "What are the challenges you face when coding?",
+        "Today in the modern world of the Web, we view websites on so many different sized  devices. We use mobile phones & tablets & laptops & projectors & screen readers & and the list goes on! All of these devices vary greatly in size and screen resolution.",
+        "A Front-end Developer must ensure that the site can be viewed correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.",
+        "Both the devices and websites constantly update and change. The tools and techniques used to create the front end of a website change constantly so the developer needs to constantly be aware of how the field is developing.",
+        "Another thing that the developer must keep in mind, is that the web must be accessible to all. We must ensure that the websites perform well on slow internet connections, as well as be viewable by people with disabilities and that the layout works in various languages. "
       ],
       [
-        "What kind of code do like to write?",
-        "I love everything frontend! User centered design. I'm a big fan of CSS, I recently got into utility first and Tailwind. I love playing around and building complex layouts with grid & flexbox. I love animations, I used to make flash animations back in the day and would love to spend some more time studying web animations and performance. And I love Vuejs and their community, I'm teaching myself Vue 3 right now"
+        "What modern frameworks and technologies do you use?",
+        "When I started learning to code, I was pretty overwhelmed by all the choice! I focussed on learning the fundamentals first and then I played around with React & Vuejs for a bit, I learnt about Styled Components and then tried out some Static Site Generators like Gatsby & Gridsome, and connected them to various CMS (Netlify CMS, Prismic, Forestry).",
+        "I love to learn but looking back I think it was too much for a newbie! I had a basic understanding of each, but it felt like it was all on the surface. I took some time and I thought about my passions: CSS, Animations, A11y, i18n, performance, reusable components, functional programming and most importantly an open and strong community. ",
+        "I had started using TailwindCSS in a project and I fell in love with utility-first syntax, the TailwindCSS team is very active on Twitter and so I started to follow along as they update things, then test it out and build stuff just for the fun of it.",
+        "I also started using Gridsome & Vuejs more and more. I found the Vuejs docs and community of devs using it to be absolutely wonderful and inspiring. I really want to get better at Web Animations and performance so I’ve decided to focus on Vuejs & TailwindCSS for now, and I’m very happy with my choice.",
+        "In the future I hope to find some time to study GSAP a bit deeper!"
+      ],
+      [
+        "How long have you been coding and why did you start?",
+        "In 2018, a conversation with a friend about the lack of diversity in his workplace’s Tech team lit a fire inside me. This got me thinking. I really loved IT in high school, I even went on to study it for a short time after graduating in 2004.",
+        "I remembered loving CSS and finding JavaScript challenging, so I started my journey there. I found an “Intro to JavaScript” workshop hosted online by a bootcamp, joined my first ever Zoom call and coded along like mad, it was brilliant! I was immediately hooked back in!",
+        "The more I researched the more free resources I found online, and got to work on my new goal with a big career change in mind. It’s been almost 2 years and I haven’t stopped coding. It’s been a HUGE challenge at times, but also incredibly rewarding, and it now feels like I won’t ever stop coding."
       ]
-    ],
-    "answers": []
+    ]
   }
 }
