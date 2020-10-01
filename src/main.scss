@@ -39,7 +39,7 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-body);
   }
 }
 
