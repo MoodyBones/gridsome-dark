@@ -1,13 +1,16 @@
 <template>
-  <div class="text-3xl font-display">
+  <div class="text-xl md:text-2xl font-display text-center">
     <span class="block">{{ message }}</span>
     <a class="text-primary font-bold" href="`${link}${contact}`"
-      ><span v-html="rightArrow"></span><span class="">{{ contact }}</span>
+      ><RightArrow class="inline mr-4" />
+      <span class="">{{ contact }}</span>
     </a>
   </div>
 </template>
 
 <script>
+import RightArrow from '@/assets/right-arrow.svg'
+
 export default {
   name: 'WorkTogether',
   data() {
@@ -15,9 +18,10 @@ export default {
       message: 'Want to work together?',
       contact: 'jones.mel@gmail.com',
       link: 'mailto:',
-      rightArrow:
-        '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>',
     }
+  },
+  components: {
+    RightArrow,
   },
 }
 </script>
