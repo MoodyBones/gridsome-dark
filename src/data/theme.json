@@ -4,12 +4,14 @@
   "first_letter_only": true,
   "email": "jones.mel@gmail.com",
   "hero_title": "I love learning and building Web Stuff!",
+  "hero_subtitle": [
+    "Heya world! I'm Mel Jones and I'm a Front-end Web Dev.",
+    "I'm inspired by the history of computers, programmers, coders, engineers, and visionaries, the Women & Men that built the Web we use so often today.",
+    "I think the Web is as a powerful tool for connection and education, and everyone should have access to it.",
+    "The Web is for all humans, big and small and I wanted to contribute my part, so I got involved in the community and taught myself to code.",
+    "Coding is a blast! Welcome to my little slice of the Web."
+  ],
 
-  "hero_subtitle1": "Software is for Humans and I believe in the power that the Web has to connect and educate us.",
-  "hero_subtitle2": "I'm inspired by the history of the Women & Men: coders, engineers, entrepreneurs, and visionaries who helped create and shape the modern Web.",
-  "hero_subtitle3": "The Web is for everyone and I wanted to contribute my part, so I got involved in the community and taught myself to code",
-  "hero_subtitle4": "Heya world! I'm Mel Jones. Welcome to my little slice of the Web.  ✨ 👩🏻‍💻 🌴 🚀",
-  "hero_subtitle5": "Heya world! I'm Mel Jones, an Australian-born & Berlin-based Front-end Developer. ",
   "social": [
     {
       "channel": "twitter",
@@ -53,14 +55,14 @@
       ],
       [
         "What modern frameworks and technologies do you use?",
-        "When I started learning to code, I was pretty overwhelmed by all the choice! I focussed on learning the fundamentals first and then I played around with React & Vuejs for a bit, I learnt about Styled Components and then tried out some Static Site Generators like Gatsby & Gridsome, and connected them to various CMS (Netlify CMS, Prismic, Forestry).",
+        "When I started learning to code, I was pretty overwhelmed by all the choice! I focussed on learning the fundamentals first and then I played around with React & Vue.js for a bit, I learnt about Styled Components and then tried out some Static Site Generators like Gatsby & Gridsome, and connected them to various CMS (Netlify CMS, Prismic, Forestry).",
         "I love to learn but looking back I think it was too much for a newbie! I had a basic understanding of each, but it felt like it was all on the surface. I took some time and I thought about my passions: CSS, Animations, A11y, i18n, performance, reusable components, functional programming and most importantly an open and strong community. ",
         "I had started using TailwindCSS in a project and I fell in love with utility-first syntax, the TailwindCSS team is very active on Twitter and so I started to follow along as they update things, then test it out and build stuff just for the fun of it.",
-        "I also started using Gridsome & Vuejs more and more. I found the Vuejs docs and community of devs using it to be absolutely wonderful and inspiring. I really want to get better at Web Animations and performance so I’ve decided to focus on Vuejs & TailwindCSS for now, and I’m very happy with my choice.",
+        "I also started using Gridsome & Vue.js more and more. I found the Vue.js docs and community of devs using it to be absolutely wonderful and inspiring. I really want to get better at Web Animations and performance so I’ve decided to focus on Vue.js & TailwindCSS for now, and I’m very happy with my choice.",
         "In the future I hope to find some time to study GSAP a bit deeper!"
       ],
       [
-        "How long have you been coding and why did you start?",
+        "When did Mel start coding and why?",
         "In 2018, a conversation with a friend about the lack of diversity in his workplace’s Tech team lit a fire inside me. This got me thinking. I really loved IT in high school, I even went on to study it for a short time after graduating in 2004.",
         "I remembered loving CSS and finding JavaScript challenging, so I started my journey there. I found an “Intro to JavaScript” workshop hosted online by a bootcamp, joined my first ever Zoom call and coded along like mad, it was brilliant! I was immediately hooked back in!",
         "The more I researched the more free resources I found online, and got to work on my new goal with a big career change in mind. It’s been almost 2 years and I haven’t stopped coding. It’s been a HUGE challenge at times, but also incredibly rewarding, and it now feels like I won’t ever stop coding."
