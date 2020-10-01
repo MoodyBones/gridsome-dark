@@ -1,24 +1,25 @@
 <template>
   <div
-    class="max-w-screen-xl mx-auto pb-40
-    grid grid-cols-1 md:grid-cols-2 bg-secondary"
+    class="max-w-screen-lg mx-auto pb-40
+    grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 bg-secondary"
   >
     <div
       class="hero-heading-wrapper 
       row-span-1 col-span-1 md:row-span-1 md:col-span-1
-      sticky top-0 z-30
+      sticky top-0 z-20
       opacity-50 rounded-sm w-full
       flex items-center justify-center"
     >
       <h1
-        class="text-6xl lg:text-9xl font-display font-bold text-center text-opacity-75 text-gray-900 p-24"
-        v-html="data.hero_title"
-      ></h1>
+        class="text-5xl md:text-6xl font-display font-bold text-center text-opacity-75 text-gray-900 p-24 leading-none"
+      >
+        {{ data.hero_title }}
+      </h1>
     </div>
     <div
       class="hero-image-wrapper 
       row-span-1 col-span-1 
-      sticky top-0 z-20
+      sticky top-0 z-30
       opacity-75
       max-w-sm p-16
       mx-auto"
@@ -27,28 +28,24 @@
       </g-image>
     </div>
     <WorkTogether
-      class="md:row-start-4 md:col-span-1 z-50 bg-background py-32 px-6"
+      class="md:col-start-1 md:col-span-1 md:row-start-3 z-0 bg-background py-48 px-6"
     />
     <div
-      class="hero-subheading-wrapper z-50 
-      row-span-3 md:col-start-2 lg:col-span-1
-      rounded-sm bg-gray-100 text-gray-900 
+      class=" z-30 
+      row-start-3 row-span-3 md:row-start-2 md:col-start-2
+      bg-gray-200 text-gray-800 
       opacity-95
-      px-4 py-10 md:px-10 
-      flex justify-center"
+      px-6 md:px-16 
+      py-16 space-y-16
+      "
     >
-      <h2 class="text-lg md:text-4xl font-sans text-opacity-75">
-        {{ data.hero_subtitle1 }}
-        <br />
-        <br />
-        {{ data.hero_subtitle2 }}
-        <br />
-        <br />
-        {{ data.hero_subtitle3 }}
-        <br />
-        <br />
-        {{ data.hero_subtitle4 }}
-      </h2>
+      <p
+        v-for="(sub, i) in data.hero_subtitle"
+        :key="sub[i]"
+        class="text-2xl md:text-3xl text-opacity-75 leading-relaxed"
+      >
+        {{ sub }}
+      </p>
     </div>
   </div>
 </template>
@@ -90,7 +87,7 @@ styles for text with bg image clip
 */
 
 .hero-heading-wrapper {
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at top right,
     #2f3542,
     #ced6e0,
@@ -98,7 +95,7 @@ styles for text with bg image clip
     #dfe4ea,
     #747d8c,
     #a4b0be
-  );
+  ); */
   mix-blend-mode: difference;
   /* background-image: radial-gradient(
     circle at top right,
@@ -106,7 +103,7 @@ styles for text with bg image clip
     #ff7675,
     #fd79a8
   ); */
-  /* background-image: radial-gradient(
+  background-image: radial-gradient(
     circle at top right,
     #845ec2,
     #465db1,
@@ -114,7 +111,7 @@ styles for text with bg image clip
     #ff9671,
     #ffc75f,
     #f9f871
-  ); */
+  );
   background-size: 400%;
   animation: bg-animation 20s infinite alternate;
   h1 {
@@ -125,9 +122,6 @@ styles for text with bg image clip
 
 .hero-image-wrapper {
   animation: shimmy 3s infinite alternate;
-}
-
-.hero-subheading-wrapper {
 }
 
 @keyframes bg-animation {
