@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'solid-primary': '0.25em 0.25em var(--color-primary)',
+        'solid-background': '0.3em 0.3em var(--color-background)',
         'solid-black': '0.3em 0.3em black',
         'solid-white': '0.25em 0.25em white',
       },

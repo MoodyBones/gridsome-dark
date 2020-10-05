@@ -20,7 +20,7 @@
         />
       </article> -->
     </section>
-    <Faq />
+    <FAQSection />
   </Layout>
 </template>
 
@@ -44,13 +44,13 @@ query Projects {
 <script>
 import ProjectMeta from '@/components/ProjectMeta'
 import Hero from '@/components/Hero'
-import Faq from '@/components/Faq'
+import FAQSection from '@/components/FAQSection'
 
 export default {
   components: {
     ProjectMeta,
     Hero,
-    Faq,
+    FAQSection,
   },
   metaInfo: {
     titleTemplate: require('../data/theme.json').site_name,
