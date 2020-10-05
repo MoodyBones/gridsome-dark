@@ -39,6 +39,9 @@ module.exports = {
         '1fr-11fr': '1fr 11fr',
         'auto auto': 'auto auto',
       },
+      inset: {
+        '8': '8rem',
+      },
       opacity: {
         '80': '.8',
         '90': '.9',

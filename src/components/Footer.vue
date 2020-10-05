@@ -74,7 +74,7 @@ export default {
   display: flex;
   .channel {
     display: block;
-    margin-right: 2rem;
+    margin-right: 1rem;
     padding: 0.5rem 0.25rem;
     &:last-of-type {
       margin: 0;

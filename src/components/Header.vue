@@ -24,20 +24,9 @@
       </span>
     </g-link>
     <div class="contact flex pt-2">
-      <svg
+      <Smiley
         class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-in duration-150"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-      </svg>
+      />
       <a class="link uppercase" :href="`mailto:${data.email}`">say hi !</a>
       <!-- <DarkLightToggle /> -->
     </div>
@@ -46,6 +35,7 @@
 
 <script>
 import data from '@/data/theme.json'
+import Smiley from '@/assets/smiley.svg'
 
 export default {
   name: 'Header',
@@ -53,6 +43,9 @@ export default {
     return {
       data,
     }
+  },
+  components: {
+    Smiley,
   },
   computed: {
     siteName() {
