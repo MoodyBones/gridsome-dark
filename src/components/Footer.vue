@@ -60,7 +60,7 @@ export default {
   align-content: center;
   padding: 0 2rem;
   z-index: 100;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 .to-top {
   user-select: none;

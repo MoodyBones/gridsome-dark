@@ -64,7 +64,7 @@ export default {
   top: 0;
   z-index: 100;
   opacity: 1;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   transition: opacity 0.5s ease;
   &.hidden {
     opacity: 0;
