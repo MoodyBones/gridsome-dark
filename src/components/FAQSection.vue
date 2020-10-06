@@ -1,7 +1,7 @@
 <template>
   <section id="faq-section" class="grid justify-center bg-gray-200 pb-40">
     <h2
-      class="text-8xl tracking-wide font-display font-bold text-background text-center my-24"
+      class="text-7xl md:text-8xl tracking-wide font-display font-bold text-center my-16 md:my-24"
     >
       {{ data.faq.title | capitalizeHeading }}
     </h2>

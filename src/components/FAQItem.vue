@@ -1,10 +1,10 @@
 <template>
   <article
     @click="toggleQuestionAnswer"
-    :class="item.isOpen ? 'shadow-none' : 'shadow-solid-background'"
+    :class="item.isOpen ? 'shadow-none' : 'shadow-solid-theme-black'"
     class=" grid grid-cols-1fr-11fr
          bg-gray-300
-         text-background cursor-pointer
+         cursor-pointer
          mb-6 mx-2 md:mx-0
          sm:max-w-screen-sm md:max-w-screen-md"
   >
@@ -16,7 +16,7 @@
       />
     </span>
     <span
-      class="font-display font-bold text-xl md:text-3xl 
+      class="font-display font-bold text-2xl md:text-3xl 
           self-center leading-snug
         pr-6 py-4 "
     >
@@ -28,7 +28,7 @@
           py-4 space-y-6
         grid grid-cols-1fr-11fr
         text-lg md:text-xl tracking-wide leading-loose pr-6
-        sm:max-w-screen-sm"
+        sm:max-w-screen-sm md:max-w-screen-md"
     >
       <p
         v-for="(answer, answerIndex) in item.answer"
