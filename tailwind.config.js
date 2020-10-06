@@ -6,22 +6,21 @@ module.exports = {
   theme: {
     fontFamily: {
       mono: ['var(--font-mono)'],
-      sans: ['var(--font-sans)'],
       body: ['var(--font-body)'],
       display: ['var(--font-display)'],
     },
     extend: {
       boxShadow: {
-        'solid-primary': '0.25em 0.25em var(--color-primary)',
-        'solid-background': '0.3em 0.3em var(--color-background)',
-        'solid-black': '0.3em 0.3em black',
-        'solid-white': '0.25em 0.25em white',
+        'solid-primary': '0.3em 0.3em var(--color-primary)',
+        'solid-theme-black': '0.3em 0.3em var(--theme-black)',
+        'solid-theme-white': '0.3em 0.3em var(--theme-white)',
       },
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         danger: 'var(--color-danger)',
-        background: 'var(--color-background)',
+        'theme-black': 'var(--theme-black)',
+        'theme-white': 'var(--theme-white)',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
@@ -38,6 +37,10 @@ module.exports = {
         '1fr-auto': '1fr auto',
         '1fr-11fr': '1fr 11fr',
         'auto auto': 'auto auto',
+      },
+      height: {
+        'screen-80': '80vh',
+        'screen-90': '90vh',
       },
       inset: {
         '8': '8rem',

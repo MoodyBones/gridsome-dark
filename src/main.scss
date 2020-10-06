@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Lato&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Lato:wght@300;400&family=Raleway:wght@500;700&display=swap');
 
 @import 'tailwindcss/base';
 
@@ -15,13 +15,14 @@
   --color-primary: #b57bff;
   --color-secondary: #4834d4;
   --color-danger: #ff7979;
-  --color-background: #131313;
+  --theme-black: #131313;
+  --theme-white: #fefefe;
+  --theme-purple: #cd84f1;
+  --theme-pink: #ffcccc;
+  --theme-red: #ff4d4d;
+  --theme-orange: #ffaf40;
   --font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono',
     'Courier New', 'monospace';
-  --font-sans: 'Open Sans Condensed', 'system-ui', '-apple-system',
-    'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial',
-    'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-body: 'Lato', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -33,7 +34,7 @@
 html {
   font-family: var(--font-body);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -49,8 +50,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--color-background);
-  color: white;
+  background-color: var(--theme-white);
+  color: var(--theme-black);
   margin: 0;
   padding: 0;
 }
