@@ -35,7 +35,7 @@
       </g-image>
     </div>
     <div
-      class="hero-copy-wrapper z-30 
+      class="hero-text-wrapper z-30 
       row-start-3 md:row-start-2 md:col-start-2 md:row-span-2
       bg-theme-black
       opacity-95 rounded-sm
@@ -103,6 +103,12 @@ export default {
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
   animation: shimmy 3s infinite alternate;
+}
+
+.hero-text-wrapper {
+  p:first-child {
+    @apply text-5xl;
+  }
 }
 
 @keyframes bg-animation {

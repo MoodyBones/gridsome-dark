@@ -3,13 +3,14 @@
   "header_title": "Mel Jones",
   "first_letter_only": true,
   "email": "jones.mel@gmail.com",
-  "hero_title": "I love learning and building WEB stuff!",
+  "hero_title": "I love learning and building WEB stuff",
   "hero_subtitle": [
-    "Heya world! I'm Mel Jones and I'm a Front-end Web Dev.",
-    "I'm inspired by the history of computers, programmers, coders, engineers, and visionaries, the Women & Men that built the Web we use so often today.",
-    "I think the Web is as a powerful tool for connection and education, and everyone should have access to it.",
-    "The Web is for all humans, big and small and I wanted to contribute my part, so I got involved in the community and taught myself to code.",
-    "Coding is a blast! Welcome to my little slice of the Web."
+    "Heya!",
+    "I'm Mel. I'm a Front-end Developer based in Berlin.",
+    "I got inspired by the history of programmers, coders, engineers, and visionaries, the Women & Men that built the powerful modern Web.",
+    "I believe that the Web is for all humans and I wanted to contribute my part, so I got involved in the community and taught myself to code.",
+    "Welcome to my little slice of the Web.",
+    "Let's stay in touch."
   ],
 
   "social": [
@@ -23,7 +24,7 @@
       "channel": "codepen",
       "urlStart": "",
       "handle": "MoodyBones",
-      "text": "My playground for building and testing out groovy UI thingys"
+      "text": "An awesome playground for building and testing out groovy UI thingys"
     },
     {
       "channel": "github",
@@ -41,7 +42,7 @@
       "channel": "linkedin",
       "urlStart": "",
       "handle": "in/mel-jones-4a5835182",
-      "text": "Connect with me on"
+      "text": "Connect and share the love"
     }
   ],
   "faq": {
