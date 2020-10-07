@@ -39,6 +39,9 @@ module.exports = {
         '1fr-11fr': '1fr 11fr',
         'auto auto': 'auto auto',
       },
+      gridTemplateRows: {
+        'footer-6': 'repeat(6, auto)',
+      },
       height: {
         'screen-80': '80vh',
         'screen-90': '90vh',

@@ -12,7 +12,18 @@
     "Welcome to my little slice of the Web.",
     "Let's stay in touch."
   ],
-
+  "footerText": [
+    "This site is created and maintain by",
+    ". It's built with Gridsome and hosted on Netlify."
+  ],
+  "thanks": {
+    "illustration": {
+      "name": "Eva Goncalves",
+      "url": "https://www.evagoncalves.com/",
+      "altText": "Illustration of hand, fingers display a peace sign",
+      "text": "Hero Peace Hand Illustration by"
+    }
+  },
   "social": [
     {
       "channel": "twitter",
