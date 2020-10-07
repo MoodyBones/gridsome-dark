@@ -1,5 +1,8 @@
 <template>
-  <footer class="footer">
+  <footer
+    class="footer px-2 md:px-8 
+  "
+  >
     <div class="to-top link-bounce" @click="scrollTopTop">
       <svg
         class="w-8 h-8"
@@ -58,7 +61,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 0 2rem;
   z-index: 100;
   /* mix-blend-mode: difference; */
 }

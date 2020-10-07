@@ -27,8 +27,9 @@
       <Smiley
         class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-in duration-150"
       />
-      <a class="link uppercase" :href="`mailto:${data.email}`">say hi !</a>
-      <!-- <DarkLightToggle /> -->
+      <a class="link uppercase text-lg" :href="`mailto:${data.email}`"
+        >say hi !</a
+      >
     </div>
   </header>
 </template>

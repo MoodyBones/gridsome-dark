@@ -11,10 +11,9 @@
       <div class="clip-path-purple opacity-25"></div>
     </div>
     <div
-      class="flex items-center justify-center
+      class="flex items-center justify-center 
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2
       sticky top-8 z-30
-
     "
     >
       <h1
@@ -98,7 +97,7 @@ export default {
     );
 
   background-size: 300%;
-  /* animation: bg-animation 10s infinite alternate; */
+  animation: bg-animation 10s infinite alternate;
 }
 
 .hero-image-wrapper {
