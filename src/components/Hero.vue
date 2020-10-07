@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hero-grid-wrapper max-w-screen-xl mx-auto pb-40
+    class="hero-grid-wrapper max-w-screen-xl mx-auto
     grid grid-cols-1 md:grid-cols-2 md:grid-rows-3"
   >
     <div
