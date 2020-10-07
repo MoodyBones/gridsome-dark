@@ -21,6 +21,7 @@
       </article> -->
     </section>
     <FAQSection />
+    <NewFooter />
   </Layout>
 </template>
 
@@ -45,12 +46,14 @@ query Projects {
 import ProjectMeta from '@/components/ProjectMeta'
 import Hero from '@/components/Hero'
 import FAQSection from '@/components/FAQSection'
+import NewFooter from '@/components/NewFooter'
 
 export default {
   components: {
     ProjectMeta,
     Hero,
     FAQSection,
+    NewFooter,
   },
   metaInfo: {
     titleTemplate: require('../data/theme.json').site_name,

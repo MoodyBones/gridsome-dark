@@ -18,9 +18,10 @@ module.exports = {
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
-        danger: 'var(--color-danger)',
         'theme-black': 'var(--theme-black)',
         'theme-white': 'var(--theme-white)',
+        'theme-purple': 'var(--theme-purple)',
+        'theme-red': 'var(--theme-red)',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',

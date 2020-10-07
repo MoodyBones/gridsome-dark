@@ -18,7 +18,7 @@
     </div>
     <div class="social">
       <a
-        class="channel link-bounce"
+        class="channel link-bounce z-0"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
@@ -80,7 +80,7 @@ export default {
       margin: 0;
     }
     svg {
-      @apply w-8 h-8;
+      @apply w-8 h-8 text-theme-red;
     }
   }
 }

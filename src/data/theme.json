@@ -15,23 +15,33 @@
   "social": [
     {
       "channel": "twitter",
+      "urlStart": "",
       "handle": "_moodybones",
-      "link_text": "tw"
+      "text": "Let's share knowledge on trends, Human-centric Design and Ethical Tech"
     },
     {
       "channel": "codepen",
+      "urlStart": "",
       "handle": "MoodyBones",
-      "link_text": "cp"
+      "text": "My playground for building and testing out groovy UI thingys"
     },
     {
       "channel": "github",
+      "urlStart": "",
       "handle": "MoodyBones",
-      "link_text": "gh"
+      "text": "All of my projects and study notes I push to"
+    },
+    {
+      "channel": "spotify",
+      "urlStart": "open.",
+      "handle": "user/1249205934",
+      "text": "Groove and code along to my funky playlists"
     },
     {
       "channel": "linkedin",
+      "urlStart": "",
       "handle": "in/mel-jones-4a5835182",
-      "link_text": "li"
+      "text": "Connect with me on"
     }
   ],
   "faq": {

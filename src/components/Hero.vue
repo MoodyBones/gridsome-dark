@@ -4,14 +4,22 @@
     grid grid-cols-1 md:grid-cols-2 md:grid-rows-3"
   >
     <div
-      class="hero-heading-wrapper 
-      row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
-      sticky top-8 z-20
-      opacity-100 rounded-sm h-screen-90
-      flex items-start md:items-center justify-center md:justify-start"
+      class="hero-bg-wrapper relative
+      row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
+      sticky top-8 z-20 h-screen-90"
+    >
+      <div class="clip-path-purple opacity-25"></div>
+    </div>
+    <div
+      class="flex items-center justify-center
+      row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2
+      sticky top-8 z-30
+
+    "
     >
       <h1
-        class="pt-16 md:p-48 text-7xl md:text-8xl font-display font-bold tracking-tighter"
+        class="text-7xl md:text-8xl font-display font-bold tracking-tighter 
+       w-min-content"
       >
         {{ data.hero_title }}
       </h1>
@@ -24,14 +32,14 @@
       max-w-sm p-24 md:p-16 md:pt-32
       mx-auto"
     >
-      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-20">
+      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-10">
       </g-image>
     </div>
     <div
       class="hero-copy-wrapper z-30 
       row-start-3 md:row-start-2 md:col-start-2 md:row-span-2
       bg-theme-black
-      opacity-95
+      opacity-95 rounded-sm
       px-8 md:px-20 
       py-16 space-y-16
       "
@@ -61,7 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-heading-wrapper {
+.hero-bg-wrapper {
   /* mix-blend-mode: difference; */
 
   background: radial-gradient(
@@ -90,11 +98,7 @@ export default {
     );
 
   background-size: 300%;
-  animation: bg-animation 10s infinite alternate;
-  h1 {
-    width: min-content;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  }
+  /* animation: bg-animation 10s infinite alternate; */
 }
 
 .hero-image-wrapper {
