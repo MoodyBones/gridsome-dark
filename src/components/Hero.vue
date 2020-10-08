@@ -106,6 +106,7 @@ export default {
 }
 
 .hero-text-wrapper {
+  clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%);
   p:first-child {
     @apply text-5xl;
   }
