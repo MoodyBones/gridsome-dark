@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer px-2 md:px-8 
+    class="footer px-2 md:px-8
   "
   >
     <div class="to-top link-bounce" @click="scrollTopTop">
@@ -19,15 +19,15 @@
         ></path>
       </svg>
     </div>
-    <div class="social z-0">
+    <div class="social">
       <a
-        class="channel link-bounce text-theme-red"
+        class="channel link-bounce text-theme-red z-0"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
       >
         <div
-          class="flex items-center justify-center w-12 h-12 border-2 border-current rounded-full"
+          class="flex items-center justify-center w-12 h-12 bg-theme-red rounded-full opacity-90 shadow-sm"
         >
           <font-awesome :icon="['fab', `${social.channel}`]" />
         </div>
@@ -86,15 +86,18 @@ export default {
       margin: 0;
     }
     svg {
-      @apply w-6 h-6;
+      @apply w-6 h-6 text-theme-black opacity-90 transition-all duration-500 ease-in-out;
     }
   }
 }
 
 .link-bounce {
-  @apply transition-all duration-500 ease-in-out border-none;
+  @apply transition-all duration-500 ease-in-out;
   &:hover {
-    @apply transform scale-110 -translate-y-2 border-none;
+    @apply transform scale-110 -translate-y-2;
+    svg {
+      @apply opacity-100;
+    }
   }
 }
 </style>
