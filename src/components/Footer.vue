@@ -3,9 +3,9 @@
     class="footer px-2 md:px-8
   "
   >
-    <div class="to-top link-bounce" @click="scrollTopTop">
+    <div class="to-top link-bounce icon-circle" @click="scrollTopTop">
       <svg
-        class="w-8 h-8"
+        class="w-8 h-8 opacity-90"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -21,14 +21,12 @@
     </div>
     <div class="social">
       <a
-        class="channel link-bounce text-theme-red z-0"
+        class="channel link-bounce"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
       >
-        <div
-          class="flex items-center justify-center w-12 h-12 bg-theme-red rounded-full opacity-90 shadow-sm"
-        >
+        <div class="icon-circle">
           <font-awesome :icon="['fab', `${social.channel}`]" />
         </div>
       </a>
@@ -86,7 +84,7 @@ export default {
       margin: 0;
     }
     svg {
-      @apply w-6 h-6 text-theme-black opacity-90 transition-all duration-500 ease-in-out;
+      @apply w-6 h-6 opacity-90 transition-all duration-500 ease-in-out;
     }
   }
 }
@@ -99,5 +97,9 @@ export default {
       @apply opacity-100;
     }
   }
+}
+
+.icon-circle {
+  @apply flex items-center justify-center w-12 h-12 bg-theme-red rounded-full opacity-90 shadow-sm;
 }
 </style>
