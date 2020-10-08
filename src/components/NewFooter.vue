@@ -2,7 +2,7 @@
   <footer class="bg-theme-red relative">
     <div class="clip-path-purple opacity-25"></div>
     <div
-      class="social container p-16 md:py-40
+      class="container p-16 md:py-40
       grid grid-cols-1 md:grid-cols-5 md:grid-rows-2
       col-gap-10 row-gap-20
       lg:max-w-screen-xl mx-auto 
@@ -22,29 +22,25 @@
           <span class=" block text-3xl py-3">
             <font-awesome class="" :icon="['fab', `${social.channel}`]" />
           </span>
-          <span class="text-lg tracking-wide leading-relaxed">
+          <span class="text-lg-footer">
             {{ social.text }}
           </span>
-          <span class="text-2xl capitalize tracking-wide pt-2">
+          <span class="heading-2xl-footer">
             {{ social.channel }}
           </span>
         </a>
       </div>
       <div
-        class="z-20"
+        class="z-20 md:row-start-2"
         v-for="(item, index) in data.footer"
         :key="`${item.name}-${index}`"
-        :class="
-          item.layoutWide
-            ? 'md:col-span-4 -col-end-1 md;text-right'
-            : 'col-span-1'
-        "
+        :class="item.layoutWide ? 'md:col-span-4 -col-end-1' : 'col-span-1'"
       >
         <a class="flex flex-col pointer link-bounce-footer" :href="item.url">
-          <span class="text-lg tracking-wide leading-relaxed">
+          <span class="text-lg-footer">
             {{ item.text }}
           </span>
-          <span class="text-2xl capitalize tracking-wide pt-2">
+          <span class="heading-2xl-footer">
             {{ item.name }}
           </span>
         </a>
@@ -78,3 +74,19 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.heading-2xl-footer {
+  @apply font-display font-bold text-2xl capitalize tracking-wide pt-2;
+}
+
+.text-lg-footer {
+  @apply text-lg tracking-wide leading-relaxed;
+}
+.link-bounce-footer {
+  @apply transition-all duration-500 ease-out border-none;
+  &:hover {
+    @apply transform scale-110 -translate-y-2 border-none;
+  }
+}
+</style>

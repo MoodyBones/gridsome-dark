@@ -72,17 +72,10 @@ body {
   }
 }
 
-.link-bounce-footer {
-  @apply transition-all duration-500 ease-out border-none;
-  &:hover {
-    @apply transform scale-110 -translate-y-2 border-none;
-  }
-}
-
 .layout {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  // overflow: hidden; this breaks the fixed layers in the hero
 }
 
 .button-black-to-gradient {

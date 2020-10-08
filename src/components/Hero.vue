@@ -1,10 +1,10 @@
 <template>
   <div
-    class="hero-grid-wrapper max-w-screen-xl mx-auto
+    class="hero-grid-wrapper container max-w-screen-xl mx-auto
     grid grid-cols-1 md:grid-cols-2 md:grid-rows-3"
   >
     <div
-      class="hero-bg-wrapper relative
+      class="hero-bg-wrapper
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
       sticky top-8 z-20 h-screen-90"
     >
