@@ -14,12 +14,12 @@
         :key="`${social.channel}-${index}`"
       >
         <a
-          class="flex flex-col pointer link-bounce-footer"
+          class="flex flex-col items-start pointer link-bounce-footer"
           :href="
             `https://${social.urlStart}${social.channel}.com/${social.handle}`
           "
         >
-          <span class=" block text-3xl py-3">
+          <span class="icon block text-3xl py-3">
             <font-awesome class="" :icon="['fab', `${social.channel}`]" />
           </span>
           <span class="text-lg-footer">
@@ -77,16 +77,20 @@ export default {
 
 <style lang="scss" scoped>
 .heading-2xl-footer {
-  @apply font-display font-bold text-2xl capitalize tracking-wide pt-2;
+  @apply font-display text-2xl capitalize tracking-wide pt-2;
 }
 
 .text-lg-footer {
   @apply text-lg tracking-wide leading-relaxed;
 }
 .link-bounce-footer {
-  @apply transition-all duration-500 ease-out border-none;
+  .icon {
+    @apply transition-all duration-500 ease-out;
+  }
   &:hover {
-    @apply transform scale-110 -translate-y-2 border-none;
+    .icon {
+      @apply transform scale-110 -translate-y-2;
+    }
   }
 }
 </style>
