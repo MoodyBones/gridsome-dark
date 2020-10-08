@@ -34,13 +34,16 @@ module.exports = {
           '900': '#212121',
         },
       },
+      gridColumnEnd: {
+        '-1': '-1',
+      },
       gridTemplateColumns: {
         '1fr-auto': '1fr auto',
         '1fr-11fr': '1fr 11fr',
         'auto auto': 'auto auto',
       },
       gridTemplateRows: {
-        'footer-6': 'repeat(6, auto)',
+        'footer-7': 'repeat(7, auto)',
       },
       height: {
         'screen-80': '80vh',

@@ -12,18 +12,22 @@
     "Welcome to my little slice of the Web.",
     "Let's stay in touch."
   ],
-  "footerText": [
-    "This site is created and maintain by",
-    ". It's built with Gridsome and hosted on Netlify."
-  ],
-  "thanks": {
-    "illustration": {
+  "footer": [
+    {
       "name": "Eva Goncalves",
       "url": "https://www.evagoncalves.com/",
       "altText": "Illustration of hand, fingers display a peace sign",
-      "text": "Hero Peace Hand Illustration by"
+      "text": "Peace Hand Illustration by the wonderful",
+      "icon": "<svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z\"></path></svg>"
+    },
+    {
+      "name": "Mel Jones",
+      "url": "https://github.com/MoodyBones/mel-jones-gridsome-garden",
+      "text": "This site is built with Gridsome, hosted on Netlify and public on GitHub. It's created and maintained by me",
+      "icon": "@/assets/smiley.svg",
+      "layoutWide": true
     }
-  },
+  ],
   "social": [
     {
       "channel": "twitter",
