@@ -19,14 +19,18 @@
         ></path>
       </svg>
     </div>
-    <div class="social">
+    <div class="social z-0">
       <a
-        class="channel link-bounce z-0"
+        class="channel link-bounce text-theme-red"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
       >
-        <font-awesome :icon="['fab', `${social.channel}`]" />
+        <div
+          class="flex items-center justify-center w-12 h-12 border-2 border-current rounded-full"
+        >
+          <font-awesome :icon="['fab', `${social.channel}`]" />
+        </div>
       </a>
     </div>
   </footer>
@@ -82,7 +86,7 @@ export default {
       margin: 0;
     }
     svg {
-      @apply w-8 h-8 text-theme-red;
+      @apply w-6 h-6;
     }
   }
 }
@@ -90,7 +94,7 @@ export default {
 .link-bounce {
   @apply transition-all duration-500 ease-in-out border-none;
   &:hover {
-    @apply transform scale-150 -translate-y-2 border-none;
+    @apply transform scale-110 -translate-y-2 border-none;
   }
 }
 </style>
