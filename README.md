@@ -17,6 +17,7 @@ This site is mantained and built by Mel jones. It is forever a work in process. 
 - Adjust animations for mobile & touch devices
 - Learn about Vue Transitions and add to FAQ drop down
 - Convert Peace Hand to SVG
+- Links to open in new tab not working
 
 This site was built on top of [Darkfolio](https://gridsome.org/starters/darkfolio/).
 Many thanks to all the programmers, coders, engineers, and visionaries that built all these incredible modern web tools. The web is for everyone, go build something cool! <3
