@@ -1,20 +1,25 @@
 <template>
-  <section id="faq-section" class="grid justify-center bg-gray-200 pb-40">
-    <h2
-      class="text-7xl md:text-8xl tracking-wide font-display font-bold text-center md:text-left mt-40 mb-24"
+  <section id="faq-section" class=" bg-gray-200 pb-40 sm:px-10">
+    <div
+      class="container mx-auto
+    grid justify-center"
     >
-      {{ data.faq.title | capitalizeHeading }}
-      <span class="inline-block">
-        <ChatSVG class="w-16 h-16 md:w-20 md:h-20" />
-      </span>
-    </h2>
-    <FAQItem
-      v-for="(item, index) in data.faq.questionList"
-      :key="`key-${index}`"
-      :item="item"
-      :index="index"
-    >
-    </FAQItem>
+      <h2
+        class="text-7xl md:text-8xl tracking-wide font-display font-bold text-center md:text-left mt-40 mb-24"
+      >
+        {{ data.faq.title | capitalizeHeading }}
+        <span class="inline-block">
+          <ChatSVG class="w-16 h-16 md:w-20 md:h-20" />
+        </span>
+      </h2>
+      <FAQItem
+        v-for="(item, index) in data.faq.questionList"
+        :key="`key-${index}`"
+        :item="item"
+        :index="index"
+      >
+      </FAQItem>
+    </div>
   </section>
 </template>
 

@@ -82,6 +82,7 @@ body {
 .layout {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .button-black-to-gradient {
