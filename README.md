@@ -1,6 +1,6 @@
 # MEL JONES DIGITAL GARDEN & PORTFOLIO SITE
 
-This site is mantained and built by Mel jones. It is forever a work in process. It's currently live at []()
+This site is mantained and built by Mel jones. It is forever a work in process. It's currently live at [https://meljones.netlify.app/](https://meljones.netlify.app/)
 
 ## Tech Stack
 
@@ -16,6 +16,7 @@ This site is mantained and built by Mel jones. It is forever a work in process. 
 - a11y | How can I improve this? Lighthouse? What else?
 - Adjust animations for mobile & touch devices
 - Learn about Vue Transitions and add to FAQ drop down
+- Convert Peace Hand to SVG
 
 This site was built on top of [Darkfolio](https://gridsome.org/starters/darkfolio/).
 Many thanks to all the programmers, coders, engineers, and visionaries that built all these incredible modern web tools. The web is for everyone, go build something cool! <3
