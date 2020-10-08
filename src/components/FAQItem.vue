@@ -12,7 +12,7 @@
       <Chevron
         :class="item.isOpen ? 'rotate-90' : 'rotate-0'"
         class="transition ease-out duration-200 
-        transform w-6 md:w-10 h-6 md:h-10 mx-3"
+        transform w-8 md:w-12 h-8 md:h-12 mx-3"
       />
     </span>
     <span
