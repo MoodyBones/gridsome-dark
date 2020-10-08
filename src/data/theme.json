@@ -23,7 +23,7 @@
     {
       "name": "Mel Jones",
       "url": "https://github.com/MoodyBones/mel-jones-gridsome-garden",
-      "text": "This site is built with Gridsome, hosted on Netlify and public on GitHub. It's created and maintained by me",
+      "text": "This site is built with Gridsome & TailwindCSS it is hosted on Netlify and public on GitHub. It's created and maintained by me",
       "icon": "@/assets/smiley.svg",
       "layoutWide": true
     }
