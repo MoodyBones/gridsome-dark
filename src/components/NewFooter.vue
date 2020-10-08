@@ -5,7 +5,7 @@
       class="social grid grid-cols-1 grid-rows-footer-6 md:grid-cols-5 md:grid-rows-1
       col-gap-10 row-gap-10
       p-16 md:p-36
-      max-w-screen-lg mx-auto 
+      lg:max-w-screen-lg mx-auto 
     "
     >
       <div class="z-20">
