@@ -40,7 +40,7 @@
       bg-theme-black
       opacity-95 rounded-sm
       px-8 md:px-20 
-      py-16 space-y-16
+      py-40 space-y-16
       "
     >
       <p
