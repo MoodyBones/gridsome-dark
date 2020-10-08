@@ -62,6 +62,9 @@ module.exports = {
         'min-content': 'min-content',
         'max-content': 'max-content',
       },
+      zIndex: {
+        '-10': '-10',
+      },
     },
   },
   variants: {},
