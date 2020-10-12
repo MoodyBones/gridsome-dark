@@ -6,7 +6,7 @@
     <div
       class="hero-bg-wrapper
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
-      sticky top-8 z-20 h-screen-90"
+      sticky top-8 z-20 h-screen-80"
     >
       <div class="clip-path-purple opacity-25"></div>
     </div>
@@ -17,7 +17,7 @@
     "
     >
       <h1
-        class="text-7xl md:text-8xl font-display font-bold tracking-tighter 
+        class="text-6xl md:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none
        w-min-content"
       >
         {{ data.hero_title }}
@@ -31,7 +31,7 @@
       max-w-sm pb-64 md:pt-32
       mx-auto"
     >
-      <g-image src="~/assets/hand-eva-goncalves.png" class="w-64 h-auto z-10">
+      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-10">
       </g-image>
     </div>
     <div
@@ -97,12 +97,12 @@ export default {
     );
 
   background-size: 300%;
-  /* background-position: left; */
+  background-position: left;
   /* transform: translate3d(s-100px, 0, 0); */
 
-  /* animation: bg-animation 10s infinite alternate; */
-  /* perspective: 1000px;
-  backface-visibility: hidden; */
+  animation: bg-animation 10s infinite alternate;
+  perspective: 1000px;
+  backface-visibility: hidden;
 }
 
 .hero-image-wrapper {
@@ -122,7 +122,8 @@ export default {
 
 @keyframes bg-animation {
   100% {
-    transform: translate3d(100px, 0, 0);
+    /* transform: translate3d(100px, 0, 0); */
+    background-position: right;
   }
 }
 
