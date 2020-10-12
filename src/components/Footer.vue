@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer px-2 md:px-8
+    class="footer px-2 md:px-8 flex items-center justify-between
   "
   >
     <div class="to-top link-bounce icon-circle" @click="scrollTopTop">
