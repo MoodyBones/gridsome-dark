@@ -13,7 +13,7 @@
 
 :root {
   --color-primary: #b57bff;
-  --color-secondary: #4834d4;
+  --theme-blue: #4834d4;
   --theme-black: #131313;
   --theme-white: #fefefe;
   --theme-purple: #cd84f1;
@@ -74,7 +74,7 @@ body {
 .button-black-to-gradient {
   @apply font-display shadow-solid-primary border-2 py-6 px-4 bg-gradient-to-r;
   &:hover {
-    @apply from-theme-red via-primary to-secondary text-black border-black;
+    @apply from-theme-red via-primary to-theme-blue text-black border-black;
   }
 }
 

@@ -17,11 +17,13 @@ module.exports = {
       },
       colors: {
         primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
+        'theme-blue': 'var(--theme-blue)',
         'theme-black': 'var(--theme-black)',
         'theme-white': 'var(--theme-white)',
         'theme-purple': 'var(--theme-purple)',
         'theme-red': 'var(--theme-red)',
+        'theme-pink': 'var(--theme-pink)',
+        'theme-orange': 'var(--theme-orange)',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
@@ -44,8 +46,10 @@ module.exports = {
       },
       gridTemplateRows: {
         'footer-7': 'repeat(7, auto)',
+        'project-6': 'repeat(6, auto)',
       },
       height: {
+        'screen-40': '40vh',
         'screen-80': '80vh',
         'screen-90': '90vh',
       },

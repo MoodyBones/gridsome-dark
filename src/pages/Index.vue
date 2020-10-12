@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <Hero />
+    <ProjectSection />
     <section class="projects">
       <!-- <article
         @click="goTo($event, project.node.path)"
@@ -46,14 +47,16 @@ query Projects {
 import ProjectMeta from '@/components/ProjectMeta'
 import Hero from '@/components/Hero'
 import FAQSection from '@/components/FAQSection'
+import ProjectSection from '@/components/ProjectSection'
 import NewFooter from '@/components/NewFooter'
 
 export default {
   components: {
-    ProjectMeta,
+    NewFooter,
     Hero,
     FAQSection,
-    NewFooter,
+    ProjectMeta,
+    ProjectSection,
   },
   metaInfo: {
     titleTemplate: require('../data/theme.json').site_name,
