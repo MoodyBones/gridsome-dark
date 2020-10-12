@@ -28,7 +28,7 @@
       row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
       sticky top-8 z-30
       opacity-75
-      max-w-sm pb-64 md:pt-32
+      max-w-sm px:10 pb-64 md:p-0 md:pt-32
       mx-auto"
     >
       <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-10">
