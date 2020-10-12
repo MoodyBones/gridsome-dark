@@ -28,10 +28,10 @@
       row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
       sticky top-8 z-30
       opacity-75
-      max-w-sm p-24 md:p-16 md:pt-32
+      max-w-sm pb-64 md:pt-32
       mx-auto"
     >
-      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-10">
+      <g-image src="~/assets/hand-eva-goncalves.png" class="w-64 h-auto z-10">
       </g-image>
     </div>
     <div
@@ -97,12 +97,20 @@ export default {
     );
 
   background-size: 300%;
-  animation: bg-animation 10s infinite alternate;
+  /* background-position: left; */
+  /* transform: translate3d(s-100px, 0, 0); */
+
+  /* animation: bg-animation 10s infinite alternate; */
+  /* perspective: 1000px;
+  backface-visibility: hidden; */
 }
 
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
-  animation: shimmy 3s infinite alternate;
+  animation: shimmy 10s infinite alternate;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  backface-visibility: hidden;
 }
 
 .hero-text-wrapper {
@@ -113,23 +121,20 @@ export default {
 }
 
 @keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
   100% {
-    background-position: right;
+    transform: translate3d(100px, 0, 0);
   }
 }
 
 @keyframes shimmy {
-  0% {
-    transform: translate(0, 0);
+  20% {
+    transform: translate3d(0, -20px, 0);
   }
   50% {
-    transform: translate(0, -10px);
+    transform: rotate(-20deg);
   }
-  70% {
-    transform: rotate(20deg);
+  80% {
+    transform: rotate(50deg);
   }
   100% {
     transform: rotate(-10deg);
