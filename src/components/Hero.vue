@@ -6,9 +6,9 @@
     <div
       class="hero-bg-wrapper
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
-      sticky top-8 z-20 h-screen-80"
+      sticky top-8 z-20 h-screen-90"
     >
-      <div class="clip-path-purple opacity-25"></div>
+      <!-- <div class="clip-path-purple opacity-25"></div> -->
     </div>
     <div
       class="flex items-center justify-center 
@@ -70,8 +70,8 @@ export default {
 <style lang="scss" scoped>
 .hero-bg-wrapper {
   /* mix-blend-mode: difference; */
-
-  background: radial-gradient(
+  background: var(--theme-purple);
+  /* background: radial-gradient(
       ellipse at top left,
       transparent,
       #cd84f1,
@@ -97,10 +97,10 @@ export default {
     );
 
   background-size: 300%;
-  background-position: left;
+  background-position: left; */
   /* transform: translate3d(s-100px, 0, 0); */
 
-  animation: bg-animation 10s infinite alternate;
+  /* animation: bg-animation 10s infinite alternate; */
   perspective: 1000px;
   backface-visibility: hidden;
 }
@@ -114,7 +114,7 @@ export default {
 }
 
 .hero-text-wrapper {
-  clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%); */
   p:first-child {
     @apply text-5xl;
   }
