@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-theme-red relative">
-    <div class="clip-path-purple opacity-25"></div>
+    <div class="clip-path-triangle-left bg-theme-purple opacity-25"></div>
     <div
       class="container p-16 md:py-40
       grid grid-cols-1 md:grid-cols-5 md:grid-rows-2
