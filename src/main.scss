@@ -12,14 +12,14 @@
 // font-family: 'Raleway', sans-serif;
 
 :root {
-  --color-primary: #b57bff;
-  --theme-blue: #4834d4;
-  --theme-black: #131313;
-  --theme-white: #fefefe;
-  --theme-purple: #cd84f1;
-  --theme-pink: #ffcccc;
-  --theme-red: #ff4d4d;
-  --theme-orange: #ffaf40;
+  --color-primary: 181 123 255;
+  --theme-blue: 72 52 212;
+  --theme-black: 19 19 19;
+  --theme-white: 254 254 254;
+  --theme-purple: 205 132 241;
+  --theme-pink: 255 204 204;
+  --theme-red: 255 77 77;
+  --theme-orange: 255 175 64;
   --font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono',
     'Courier New', 'monospace';
   --font-body: 'Lato', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
@@ -85,10 +85,10 @@ body {
   }
 }
 
-.clip-path-purple {
+.clip-path-triangle-left {
   -webkit-clip-path: polygon(0 0, 100% 0, 0% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 0% 100%, 0% 100%);
-  background: var(--theme-purple);
+  // background-color: var(--theme-purple); // add color to div - Tailwind bug
   position: absolute;
   left: 0;
   top: 0;
