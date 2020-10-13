@@ -120,10 +120,12 @@
     <div
       class="md:col-span-2 bg-theme-black flex justify-center content-center py-32"
     >
-      <g-image
-        src="@/assets/game-2048.gif"
-        class="w-64 md:w-1/3 h-auto rounded-sm"
-      ></g-image>
+      <div class="w-64 md:w-1/3">
+        <g-image
+          src="@/assets/game-2048.gif"
+          class="w-full h-auto rounded-sm"
+        ></g-image>
+      </div>
     </div>
   </section>
 </template>
