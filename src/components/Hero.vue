@@ -4,7 +4,7 @@
     grid grid-cols-1 md:grid-cols-2 md:grid-rows-3"
   >
     <div
-      class="hero-bg-wrapper
+      class="hero-bg-wrapper bg-theme-purple
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
       sticky top-8 z-20 h-screen-90"
     >
@@ -26,13 +26,16 @@
     <div
       class="hero-image-wrapper 
       row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
-      sticky top-8 z-30
-      opacity-75
-      max-w-sm p-20 md:p-0 md:pt-32
-      mx-auto"
+      sticky top-8 z-30 h-screen-80
+      flex justify-center content-center"
     >
-      <g-image src="~/assets/hand-eva-goncalves.png" class="w-56 h-auto z-10">
-      </g-image>
+      <div class="w-48 md:w-56 h-auto">
+        <g-image
+          src="~/assets/hand-eva-goncalves.png"
+          class="w-full h-auto z-10 opacity-75"
+        >
+        </g-image>
+      </div>
     </div>
     <div
       class="hero-text-wrapper z-30 
@@ -70,7 +73,7 @@ export default {
 <style lang="scss" scoped>
 .hero-bg-wrapper {
   /* mix-blend-mode: difference; */
-  background: var(--theme-purple);
+  /* background-color: var(--theme-purple); */
   /* background: radial-gradient(
       ellipse at top left,
       transparent,
@@ -101,13 +104,13 @@ export default {
   /* transform: translate3d(s-100px, 0, 0); */
 
   /* animation: bg-animation 10s infinite alternate; */
-  perspective: 1000px;
-  backface-visibility: hidden;
+  /* perspective: 1000px;
+  backface-visibility: hidden; */
 }
 
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
-  animation: shimmy 10s infinite alternate;
+  animation: shimmy 6s infinite alternate;
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
   backface-visibility: hidden;
@@ -135,7 +138,7 @@ export default {
     transform: rotate(-20deg);
   }
   80% {
-    transform: rotate(50deg);
+    transform: rotate(30deg);
   }
   100% {
     transform: rotate(-10deg);
