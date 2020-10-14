@@ -110,7 +110,7 @@ export default {
 
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
-  animation: shimmy 6s infinite alternate;
+  animation: shimmy 6s 3 alternate;
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
   backface-visibility: hidden;
