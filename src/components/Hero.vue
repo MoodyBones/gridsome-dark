@@ -29,7 +29,7 @@
       sticky top-8 z-30 h-screen-80
       flex justify-center items-center"
     >
-      <div class="w-48 md:w-56 h-auto">
+      <div class="w-48 md:w-56 h-auto animate-wiggle">
         <g-image
           src="~/assets/hand-eva-goncalves.png"
           class="w-full h-auto z-10 opacity-75"
@@ -110,7 +110,7 @@ export default {
 
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
-  animation: shimmy 6s 3 alternate;
+  /* animation: shimmy 6s 3 alternate; */
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
   backface-visibility: hidden;

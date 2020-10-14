@@ -11,6 +11,9 @@ module.exports = {
       display: ['var(--font-display)'],
     },
     extend: {
+      animation: {
+        wiggle: 'wiggle 6s infinite',
+      },
       boxShadow: {
         'solid-primary': '0.3em 0.3em var(--color-primary)',
         'solid-theme-black': '0.3em 0.3em var(--theme-black)',
@@ -121,6 +124,16 @@ module.exports = {
       },
       inset: {
         '8': '8rem',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': {
+            transform: 'scale(.8) rotate(-7deg)',
+          },
+          '50%': {
+            transform: 'scale(1) rotate(15deg)',
+          },
+        },
       },
       opacity: {
         '80': '.8',
