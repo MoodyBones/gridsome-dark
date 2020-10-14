@@ -1,5 +1,7 @@
 <template>
-  <section class="grid grid-cols-1 md:grid-cols-2 grid-rows-project-7">
+  <section
+    class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto grid-flow-row-dense"
+  >
     <div class="bg-theme-blue wrapper-project">
       <a href="https://losfuerlesbos.com/">
         <svg
@@ -19,26 +21,48 @@
       </a>
     </div>
     <div class="bg-theme-pink wrapper-project heading-wrapper-project">
-      <a href="https://losfuerlesbos.com/">
+      <article>
         <h2 class="heading-project">Los Für Lesbos</h2>
-      </a>
+        <ul class="">
+          <li class="">Fundraising Site</li>
+          <li class="">Gridsome | Vue.js</li>
+          <li class="">TailwindCSS | SCSS</li>
+          <li class="">Markdown | GraphQL</li>
+          <li class="">Responsive Layout | 2 Pages</li>
+          <li class="">#LosFuerLesbos #LeaveNoOneBehind</li>
+          <li class="self-end pt-8">
+            <a href="https://losfuerlesbos.com/">
+              <svg
+                class="w-12 h-12"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
     </div>
-    <div class="image-wrapper-project bg-theme-black ">
-      <div class="p-10">
+    <div class="bg-theme-white image-wrapper-project">
+      <a class="image-container" href="https://losfuerlesbos.com/">
         <g-image
           src="@/assets/los-fuer-lesbos-dark.jpg"
           class="image-project"
         ></g-image>
-      </div>
-    </div>
-    <div class="bg-gray-700 wrapper-project heading-wrapper-project">
-      <a href="https://stiftung-seenotrettung.org/de/">
-        <h2 class="heading-project">
-          Stiftungsfonds Zivile Seenotrettung
-        </h2>
       </a>
+      <h3 class="text-theme-red">
+        for Sea-Watch.org
+      </h3>
     </div>
-    <div class="bg-blue-100 wrapper-project">
+    <div class="bg-blue-100 wrapper-project md:col-start-2 md:col-end-3">
       <a href="https://stiftung-seenotrettung.org/de/">
         <svg
           class="icon-project"
@@ -56,31 +80,66 @@
         </svg>
       </a>
     </div>
-    <div class="image-wrapper-project">
-      <div class="p-10 md:w-1/3">
-        <g-image
-          src="@/assets/stiftungsfonds-index.jpg"
-          class="image-project"
-        ></g-image>
-      </div>
-      <div class="p-10 md:w-1/3">
-        <g-image
-          src="@/assets/stiftungsfonds-orgs.jpg"
-          class="image-project"
-        ></g-image>
-      </div>
-      <div class="p-10 md:w-1/3">
-        <g-image
-          src="@/assets/stiftungsfonds-projects.jpg"
-          class="image-project"
-        ></g-image>
-      </div>
-      <!-- <div class="p-10 md:p-6 md:w-1/3">
-        <g-image
-          src="@/assets/stiftungsfonds-press.jpg"
-          class="image-project"
-        ></g-image>
-      </div> -->
+    <div class="bg-gray-500 wrapper-project heading-wrapper-project md:">
+      <article>
+        <h2 class="heading-project">
+          Stiftungsfonds Zivile Seenotrettung
+        </h2>
+        <ul class="">
+          <li class="">Foundation Fund for Civil Sea Rescue Site</li>
+          <li class="">Gridsome | Vue.js</li>
+          <li class="">TailwindCSS | SCSS</li>
+          <li class="">Netlify CMS | GraphQL</li>
+          <li class="">i18n | DE/EN</li>
+          <li class="">Responsive Design & Layout | 7 Pages</li>
+          <li class="self-end pt-8">
+            <a href="https://stiftung-seenotrettung.org/de/">
+              <svg
+                class="w-12 h-12"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </div>
+    <div class="bg-theme-white image-wrapper-project">
+      <a
+        class="flex flex-col md:flex-row justify-center items-center"
+        href="https://stiftung-seenotrettung.org/de/"
+      >
+        <div class="image-container md:w-1/3">
+          <g-image
+            src="@/assets/stiftungsfonds-index.jpg"
+            class="image-project"
+          ></g-image>
+        </div>
+        <div class="image-container md:w-1/3">
+          <g-image
+            src="@/assets/stiftungsfonds-orgs.jpg"
+            class="image-project"
+          ></g-image>
+        </div>
+        <div class="image-container md:w-1/3">
+          <g-image
+            src="@/assets/stiftungsfonds-projects.jpg"
+            class="image-project"
+          ></g-image>
+        </div>
+      </a>
+      <h3 class="text-theme-red">
+        for Sea-Watch.org
+      </h3>
     </div>
     <div class="bg-theme-purple wrapper-project">
       <a href="https://codepen.io/MoodyBones/full/GRZPjva">
@@ -107,16 +166,51 @@
       </a>
     </div>
     <div class="bg-theme-orange wrapper-project heading-wrapper-project">
-      <a href="https://codepen.io/MoodyBones/full/GRZPjva">
+      <article>
         <h2 class="heading-project">
           2048 Game
         </h2>
-      </a>
+        <ul class="">
+          <li class="">Javascript Logic Game</li>
+          <li class="">HTML</li>
+          <li class="">CSS</li>
+          <li class="">JavaScript</li>
+          <li class="">Interaction Animation</li>
+          <li class="">Mouse & keyboard events</li>
+          <li class="self-end  pt-8">
+            <a href="https://codepen.io/MoodyBones/full/GRZPjva">
+              <svg
+                class="w-12 h-12"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
     </div>
-    <div class="image-wrapper-project">
-      <div class="w-64 md:w-1/3">
-        <g-image src="@/assets/game-2048.gif" class="image-project"></g-image>
-      </div>
+    <div class="bg-theme-white image-wrapper-project">
+      <a
+        class="image-container md:w-2/5"
+        href="https://codepen.io/MoodyBones/full/GRZPjva"
+      >
+        <g-image
+          src="@/assets/game-2048.gif"
+          class="image-project gif"
+        ></g-image>
+      </a>
+      <h3 class="text-theme-red">
+        for Fun
+      </h3>
     </div>
   </section>
 </template>
@@ -129,28 +223,40 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper-project {
-  @apply flex flex-col justify-center items-center font-display font-bold leading-tight py-32;
+  @apply flex flex-col justify-center items-center py-32;
+
+  .icon-project {
+    @apply opacity-90 w-32 h-32 sm:w-48 sm:h-48;
+  }
 }
 
 .heading-wrapper-project {
-  @apply transition-colors ease-out duration-200;
+  @apply transition-opacity ease-out duration-100 px-12;
   @apply md:hover:bg-opacity-50;
-}
-.heading-project {
-  @apply w-min-content text-5xl py-40;
-}
-.icon-project {
-  @apply w-32 h-32;
+
+  .heading-project {
+    @apply font-display font-bold leading-tight w-min-content text-4xl sm:text-5xl py-10;
+  }
+  ul {
+    @apply font-light text-xl sm:text-2xl ml-10 leading-loose flex flex-col;
+  }
 }
 .image-wrapper-project {
-  @apply col-span-full flex flex-col md:flex-row justify-center items-center py-48 md:px-20;
+  @apply col-span-full flex flex-col justify-center items-center py-10 md:py-32 md:px-20;
 
-  div {
-    @apply opacity-90 md:hover:opacity-100;
-
-    .image-project {
-      @apply w-full h-auto rounded-sm shadow-2xl;
-    }
+  .image-container {
+    @apply transition-opacity ease-out duration-100;
+    @apply opacity-95 px-4 py-10 md:p-6 md:hover:opacity-100;
+  }
+  .image-project {
+    @apply w-full h-auto rounded-sm shadow-2xl;
+  }
+  .gif {
+    perspective: 1000px;
+    backface-visibility: hidden;
+  }
+  h3 {
+    @apply opacity-90 font-display text-2xl sm:text-3xl my-10;
   }
 }
 </style>
