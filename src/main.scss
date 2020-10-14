@@ -12,14 +12,14 @@
 // font-family: 'Raleway', sans-serif;
 
 :root {
-  --color-primary: 181 123 255;
-  --theme-blue: 72 52 212;
-  --theme-black: 19 19 19;
-  --theme-white: 254 254 254;
-  --theme-purple: 205 132 241;
-  --theme-pink: 255 204 204;
-  --theme-red: 255 77 77;
-  --theme-orange: 255 175 64;
+  --color-primary: 181, 123, 255;
+  --theme-blue: 72, 52, 212;
+  --theme-black: 19, 19, 19;
+  --theme-white: 254, 254, 254;
+  --theme-purple: 205, 132, 241;
+  --theme-pink: 255, 204, 204;
+  --theme-red: 255, 77, 77;
+  --theme-orange: 255, 175, 64;
   --font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono',
     'Courier New', 'monospace';
   --font-body: 'Lato', 'system-ui', '-apple-system', 'BlinkMacSystemFont',

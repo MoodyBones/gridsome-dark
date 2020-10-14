@@ -27,7 +27,7 @@
       class="hero-image-wrapper 
       row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
       sticky top-8 z-30 h-screen-80
-      flex justify-center content-center"
+      flex justify-center items-center"
     >
       <div class="w-48 md:w-56 h-auto">
         <g-image

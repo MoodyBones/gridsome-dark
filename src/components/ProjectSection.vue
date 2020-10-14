@@ -18,22 +18,20 @@
         </svg>
       </a>
     </div>
-    <div class="bg-theme-pink wrapper-project">
+    <div class="bg-theme-pink wrapper-project heading-wrapper-project">
       <a href="https://losfuerlesbos.com/">
         <h2 class="heading-project">Los Für Lesbos</h2>
       </a>
     </div>
-    <div
-      class="md:col-span-2 bg-theme-black flex flex-col md:flex-row py-48 md:px-20"
-    >
-      <div class="p-10 opacity-90 hover:opacity-100">
+    <div class="image-wrapper-project bg-theme-black ">
+      <div class="p-10">
         <g-image
           src="@/assets/los-fuer-lesbos-dark.jpg"
-          class="w-full h-auto rounded-sm"
+          class="image-project"
         ></g-image>
       </div>
     </div>
-    <div class="bg-gray-700 wrapper-project">
+    <div class="bg-gray-700 wrapper-project heading-wrapper-project">
       <a href="https://stiftung-seenotrettung.org/de/">
         <h2 class="heading-project">
           Stiftungsfonds Zivile Seenotrettung
@@ -58,31 +56,29 @@
         </svg>
       </a>
     </div>
-    <div
-      class="md:col-span-2 bg-theme-black flex flex-col md:flex-row py-48 md:px-20"
-    >
+    <div class="image-wrapper-project">
       <div class="p-10 md:w-1/3">
         <g-image
           src="@/assets/stiftungsfonds-index.jpg"
-          class="w-full h-auto rounded-sm"
+          class="image-project"
         ></g-image>
       </div>
       <div class="p-10 md:w-1/3">
         <g-image
           src="@/assets/stiftungsfonds-orgs.jpg"
-          class="w-full h-auto rounded-sm"
+          class="image-project"
         ></g-image>
       </div>
       <div class="p-10 md:w-1/3">
         <g-image
           src="@/assets/stiftungsfonds-projects.jpg"
-          class="w-full h-auto rounded-sm"
+          class="image-project"
         ></g-image>
       </div>
       <!-- <div class="p-10 md:p-6 md:w-1/3">
         <g-image
           src="@/assets/stiftungsfonds-press.jpg"
-          class="w-full h-auto rounded-sm"
+          class="image-project"
         ></g-image>
       </div> -->
     </div>
@@ -110,21 +106,16 @@
         </svg>
       </a>
     </div>
-    <div class="bg-theme-orange wrapper-project">
+    <div class="bg-theme-orange wrapper-project heading-wrapper-project">
       <a href="https://codepen.io/MoodyBones/full/GRZPjva">
         <h2 class="heading-project">
           2048 Game
         </h2>
       </a>
     </div>
-    <div
-      class="md:col-span-2 bg-theme-black flex justify-center content-center py-32"
-    >
+    <div class="image-wrapper-project">
       <div class="w-64 md:w-1/3">
-        <g-image
-          src="@/assets/game-2048.gif"
-          class="w-full h-auto rounded-sm"
-        ></g-image>
+        <g-image src="@/assets/game-2048.gif" class="image-project"></g-image>
       </div>
     </div>
   </section>
@@ -138,16 +129,28 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper-project {
-  @apply flex flex-col justify-center items-center font-display font-bold leading-tight py-32 transition-colors ease-out duration-200;
+  @apply flex flex-col justify-center items-center font-display font-bold leading-tight py-32;
+}
 
-  &:hover {
-    @apply bg-opacity-25;
-  }
+.heading-wrapper-project {
+  @apply transition-colors ease-out duration-200;
+  @apply md:hover:bg-opacity-50;
 }
 .heading-project {
   @apply w-min-content text-5xl py-40;
 }
 .icon-project {
   @apply w-32 h-32;
+}
+.image-wrapper-project {
+  @apply col-span-full flex flex-col md:flex-row justify-center items-center py-48 md:px-20;
+
+  div {
+    @apply opacity-90 md:hover:opacity-100;
+
+    .image-project {
+      @apply w-full h-auto rounded-sm shadow-2xl;
+    }
+  }
 }
 </style>

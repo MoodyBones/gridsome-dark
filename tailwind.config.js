@@ -17,14 +17,78 @@ module.exports = {
         'solid-theme-white': '0.3em 0.3em var(--theme-white)',
       },
       colors: {
-        primary: 'rgb(var(--color-primary) / var(--bg-opacity, 1))',
-        'theme-blue': 'rgb(var(--theme-blue) / var(--bg-opacity, 1))',
-        'theme-black': 'rgb(var(--theme-black) / var(--bg-opacity, 1))',
-        'theme-white': 'rgb(var(--theme-white) / var(--bg-opacity, 1))',
-        'theme-purple': 'rgb(var(--theme-purple) / var(--bg-opacity, 1))',
-        'theme-red': 'rgb(var(--theme-red) / var(--bg-opacity, 1))',
-        'theme-pink': 'rgb(var(--theme-pink) / var(--bg-opacity, 1))',
-        'theme-orange': 'rgb(var(--theme-orange) / var(--bg-opacity, 1))',
+        primary: ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--color-primary), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--color-primary), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--color-primary))`
+        },
+        'theme-blue': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-blue), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-blue), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-blue))`
+        },
+        'theme-black': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-black), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-black), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-black))`
+        },
+        'theme-white': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-white), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-white), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-white))`
+        },
+        'theme-purple': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-purple), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-purple), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-purple))`
+        },
+        'theme-red': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-red), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-red), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-red))`
+        },
+        'theme-pink': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-pink), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-pink), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-pink))`
+        },
+        'theme-orange': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-orange), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-orange), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-orange))`
+        },
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
