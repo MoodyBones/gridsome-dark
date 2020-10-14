@@ -3,7 +3,10 @@
     class="footer px-2 md:px-8 flex items-center justify-between
   "
   >
-    <div class="to-top link-bounce icon-circle" @click="scrollTopTop">
+    <div
+      class="to-top link-bounce icon-circle bg-theme-red"
+      @click="scrollTopTop"
+    >
       <svg
         class="w-8 h-8 opacity-90"
         fill="none"
@@ -26,7 +29,7 @@
         :key="index"
         :href="`https://${social.channel}.com/${social.handle}`"
       >
-        <div class="icon-circle">
+        <div class="icon-circle bg-theme-red">
           <font-awesome :icon="['fab', `${social.channel}`]" />
         </div>
       </a>
@@ -100,6 +103,6 @@ export default {
 }
 
 .icon-circle {
-  @apply flex items-center justify-center w-12 h-12 bg-theme-red rounded-full opacity-90 shadow-sm;
+  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-90 shadow-sm;
 }
 </style>
