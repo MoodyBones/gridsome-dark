@@ -1,6 +1,7 @@
 module.exports = {
   purge: [],
   experimental: {
+    applyComplexClasses: true,
     extendedFontSizeScale: true,
   },
   theme: {
