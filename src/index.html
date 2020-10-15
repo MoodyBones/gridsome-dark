@@ -7,7 +7,7 @@
     <script>
       // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
       // for this starter, i used the code from gridsome.org
-      ;(function() {
+      {# ;(function() {
         window.__onThemeChange = function() {}
         function setTheme(newTheme) {
           window.__theme = newTheme
@@ -36,7 +36,7 @@
         })
 
         setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
-      })()
+      })() #}
     </script>
 
     ${app} ${scripts}
