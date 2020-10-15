@@ -2,7 +2,7 @@
   <footer class="bg-theme-red relative">
     <div class="clip-path-triangle-left bg-theme-purple opacity-25"></div>
     <div
-      class="container p-16 md:py-40
+      class="container p-16 pb-32 md:py-40
       grid grid-cols-1 md:grid-cols-5 md:grid-rows-2
       col-gap-10 row-gap-20
       lg:max-w-screen-xl mx-auto 
@@ -46,15 +46,6 @@
         </a>
       </div>
     </div>
-    <!-- <div
-      v-for="(value, index) in data.footerText"
-      :key="index"
-      class="z-20 max-w-screen-lg mx-auto text-3xl"
-    >
-      {{ value[0] }}
-    </div> -->
-    <!--       "icon": "<svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z\"></path></svg>"
- -->
   </footer>
 </template>
 
