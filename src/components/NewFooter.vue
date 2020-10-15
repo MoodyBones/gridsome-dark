@@ -2,9 +2,9 @@
   <footer class="bg-theme-red relative">
     <div class="clip-path-triangle-left bg-theme-purple opacity-25"></div>
     <div
-      class="container p-16 pb-32 md:py-40
-      grid grid-cols-1 md:grid-cols-5 md:grid-rows-2
-      col-gap-10 row-gap-20
+      class="container p-16 pb-32 md:px-0 md:py-40
+      grid grid-cols-1 md:grid-cols-5 md:auto-rows-auto
+      gap-y-20 md:gap-x-16 lg:gap-x-20
       lg:max-w-screen-xl mx-auto 
     "
     >
