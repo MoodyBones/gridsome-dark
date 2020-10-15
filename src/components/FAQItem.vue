@@ -25,7 +25,7 @@
     <div
       v-show="item.isOpen"
       class="bg-white col-span-2 
-          py-4 space-y-6
+          pt-6 pb-10 space-y-6
         grid grid-cols-1fr-11fr
         text-lg md:text-xl tracking-wide leading-loose pr-6
         sm:max-w-screen-sm md:max-w-screen-md"
