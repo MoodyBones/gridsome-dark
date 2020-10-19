@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+footer {
+  @apply antialiased;
+}
+
 .heading-2xl-footer {
   @apply font-display text-2xl capitalize tracking-wide pt-2;
 }
