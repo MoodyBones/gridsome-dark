@@ -231,7 +231,7 @@ export default {
 }
 
 .heading-wrapper-project {
-  @apply transition-opacity ease-out duration-100 px-12;
+  @apply transition-all duration-700 ease-in-out px-12;
   @apply md:hover:bg-opacity-50;
 
   .heading-project {
@@ -249,7 +249,7 @@ export default {
     @apply opacity-95 px-4 py-10 md:p-6 md:hover:opacity-100;
   }
   .image-project {
-    @apply w-full h-auto rounded-sm shadow-2xl;
+    @apply w-full h-auto rounded shadow-xl;
   }
   .gif {
     perspective: 1000px;
