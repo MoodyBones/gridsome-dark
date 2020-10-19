@@ -4,6 +4,9 @@ module.exports = {
     applyComplexClasses: true,
     extendedFontSizeScale: true,
   },
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   theme: {
     fontFamily: {
       mono: ['var(--font-mono)'],
@@ -16,7 +19,7 @@ module.exports = {
       },
       boxShadow: {
         'solid-primary': '0.3em 0.3em var(--color-primary)',
-        'solid-theme-black': '0.3em 0.3em var(--theme-black)',
+        'solid-theme-black': '0.3em 0.3em #131313', //bg-opacity breaks the css variables
         'solid-theme-white': '0.3em 0.3em var(--theme-white)',
       },
       colors: {
