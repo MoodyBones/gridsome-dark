@@ -26,8 +26,10 @@
       <a
         class="channel link-bounce"
         v-for="(social, index) in data.social"
-        :key="index"
-        :href="`https://${social.channel}.com/${social.handle}`"
+        :key="`${social.channel}-${index}`"
+        :href="
+          `https://${social.urlStart}${social.channel}.com/${social.handle}`
+        "
       >
         <div class="icon-circle bg-theme-red">
           <font-awesome :icon="['fab', `${social.channel}`]" />
