@@ -12,16 +12,16 @@
 // font-family: 'Raleway', sans-serif;
 
 :root {
-  --color-primary: 181, 123, 255;
-  --theme-blue: 72, 52, 212;
-  --theme-black: 19, 19, 19;
-  --theme-white: 254, 254, 254;
-  --theme-purple: 205, 132, 241;
-  --theme-pink: 255, 204, 204;
-  --theme-red: 255, 77, 77;
+  --color-primary: 181, 123, 255; // must save in rbg format with the prefix
+  --theme-blue: 72, 52, 212; // see extra function in tailwindcss config
+  --theme-black: 19, 19, 19; // this is done so that bg opacity can be used
+  --theme-white: 254, 254, 254; // although I'm not sure if it's worth it,
+  --theme-purple: 205, 132, 241; // because it breaks everything else
+  --theme-pink: 255, 204, 204; // eg. you can not use these varibles in custom border configs
+  --theme-red: 255, 77, 77; // and the biggest problem I found is that you can not use these colours in custom classes!!
   --theme-orange: 255, 175, 64;
   --font-mono: 'IBM Plex Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono',
-    'Courier New', 'monospace';
+    'Courier New', 'monospace'; // i have added all the the generic tailwind fonts behind my custom one, not sure if this is necessary
   --font-body: 'Lato', 'system-ui', '-apple-system', 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -53,6 +53,8 @@ body {
   color: var(--theme-black);
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 // a {
 //   color: inherit;
