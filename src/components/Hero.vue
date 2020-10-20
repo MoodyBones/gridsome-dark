@@ -17,10 +17,11 @@
     "
     >
       <h1
-        class="text-6xl md:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none
-       w-min-content"
+        class="text-6xl md:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none px-24"
       >
-        {{ data.hero_title }}
+        {{ data.hero_title[0] }}
+        <br />
+        {{ data.hero_title[1] }}
       </h1>
     </div>
     <div
