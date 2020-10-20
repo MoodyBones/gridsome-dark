@@ -17,7 +17,7 @@
     "
     >
       <h1
-        class="text-6xl md:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none px-24"
+        class="text-6xl sm:text-7xl lg:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none px-10 sm:px-20 lg:px-24"
       >
         {{ data.hero_title[0] }}
         <br />
