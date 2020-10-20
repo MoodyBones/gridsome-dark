@@ -3,7 +3,10 @@
     class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto grid-flow-row-dense"
   >
     <div class="bg-theme-blue wrapper-project">
-      <a href="https://losfuerlesbos.com/">
+      <a
+        class="icon-wrapper md:hover:text-theme-pink"
+        href="https://losfuerlesbos.com/"
+      >
         <svg
           class="icon-project"
           fill="none"
@@ -63,7 +66,10 @@
       </h3>
     </div>
     <div class="bg-blue-100 wrapper-project md:col-start-2 md:col-end-3">
-      <a href="https://stiftung-seenotrettung.org/de/">
+      <a
+        class="icon-wrapper md:hover:text-gray-500"
+        href="https://stiftung-seenotrettung.org/de/"
+      >
         <svg
           class="icon-project"
           fill="none"
@@ -115,22 +121,22 @@
     </div>
     <div class="bg-theme-white image-wrapper-project">
       <a
-        class="flex flex-col md:flex-row justify-center items-center"
+        class="flex flex-col md:flex-row justify-center items-center "
         href="https://stiftung-seenotrettung.org/de/"
       >
-        <div class="image-container md:w-1/3">
+        <div class="image-container image-grid-3">
           <g-image
             src="@/assets/stiftungsfonds-index.jpg"
             class="image-project"
           ></g-image>
         </div>
-        <div class="image-container md:w-1/3">
+        <div class="image-container image-grid-3">
           <g-image
             src="@/assets/stiftungsfonds-orgs.jpg"
             class="image-project"
           ></g-image>
         </div>
-        <div class="image-container md:w-1/3">
+        <div class="image-container image-grid-3">
           <g-image
             src="@/assets/stiftungsfonds-projects.jpg"
             class="image-project"
@@ -142,7 +148,10 @@
       </h3>
     </div>
     <div class="bg-theme-purple wrapper-project">
-      <a href="https://codepen.io/MoodyBones/full/GRZPjva">
+      <a
+        class="icon-wrapper md:hover:text-theme-orange"
+        href="https://codepen.io/MoodyBones/full/GRZPjva"
+      >
         <svg
           class="icon-project"
           fill="none"
@@ -225,13 +234,16 @@ export default {
 .wrapper-project {
   @apply flex flex-col justify-center items-center py-32;
 
+  .icon-wrapper {
+    @apply transition-colors ease-out duration-500;
+  }
   .icon-project {
     @apply opacity-90 w-32 h-32 sm:w-48 sm:h-48;
   }
 }
 
 .heading-wrapper-project {
-  @apply transition-all duration-700 ease-in-out px-12;
+  @apply transition-all ease-out duration-500 px-12;
   @apply md:hover:bg-opacity-50;
 
   .heading-project {
@@ -245,11 +257,14 @@ export default {
   @apply col-span-full flex flex-col justify-center items-center py-10 md:py-32 md:px-20;
 
   .image-container {
-    @apply transition-opacity ease-out duration-100;
-    @apply opacity-95 px-4 py-10 md:p-6 md:hover:opacity-100;
+    @apply transition-all ease-out duration-500;
+    @apply opacity-95 px-4 py-10 md:py-6 md:px-10 md:hover:opacity-100;
   }
   .image-project {
     @apply w-full h-auto rounded shadow-xl;
+  }
+  .image-grid-3 {
+    @apply md:w-1/3 scale-100 transform md:hover:scale-125;
   }
   .gif {
     perspective: 1000px;
