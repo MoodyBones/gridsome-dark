@@ -258,7 +258,7 @@ export default {
 
 .heading-wrapper-project {
   @apply transition-all ease-out duration-500 px-12;
-  @apply md:hover:bg-opacity-50;
+  @apply bg-opacity-50 md:bg-opacity-100 md:hover:bg-opacity-50;
 
   .heading-project {
     @apply font-display font-bold leading-tight w-min-content text-5xl py-10;
@@ -279,7 +279,7 @@ export default {
     @apply opacity-95 px-6 py-10 md:py-6 md:px-4 md:hover:opacity-100;
   }
   .image-project {
-    @apply w-full h-auto rounded shadow-2xl;
+    @apply w-full h-auto rounded-sm shadow-2xl;
   }
   .image-grid-3 {
     @apply md:w-1/3 md:scale-95 transform md:hover:-translate-y-2 md:hover:scale-100;
