@@ -13,7 +13,7 @@ import FooterFloating from '@/components/FooterFloating'
 export default {
   components: {
     Header,
-    Footer,
+    FooterFloating,
   },
 }
 </script>
