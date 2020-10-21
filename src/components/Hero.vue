@@ -54,6 +54,15 @@
       >
         {{ sub }}
       </p>
+      <p class="text-2xl md:text-3xl text-gray-400 font-light leading-relaxed ">
+        Any time you want,
+        <a
+          :href="`mailto:${data.email}`"
+          class="underline md:hover:text-gray-100"
+        >
+          say hi!
+        </a>
+      </p>
     </div>
   </div>
 </template>
