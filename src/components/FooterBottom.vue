@@ -54,7 +54,7 @@ import data from '@/data/theme.json'
 import HeartSVG from '@/assets/heart.svg'
 
 export default {
-  name: 'NewFooter',
+  name: 'FooterBottom',
   components: {
     HeartSVG,
   },

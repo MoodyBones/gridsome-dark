@@ -22,7 +22,7 @@
       </article> -->
     </section>
     <FAQSection />
-    <NewFooter />
+    <FooterBottom />
   </Layout>
 </template>
 
@@ -48,11 +48,11 @@ import ProjectMeta from '@/components/ProjectMeta'
 import Hero from '@/components/Hero'
 import FAQSection from '@/components/FAQSection'
 import ProjectSection from '@/components/ProjectSection'
-import NewFooter from '@/components/NewFooter'
+import FooterBottom from '@/components/FooterBottom'
 
 export default {
   components: {
-    NewFooter,
+    FooterBottom,
     Hero,
     FAQSection,
     ProjectMeta,
