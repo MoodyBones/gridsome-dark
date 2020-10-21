@@ -62,7 +62,7 @@ export default {
 <style lang="scss">
 .footer {
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 0;
   width: 100%;
   display: flex;
@@ -83,7 +83,7 @@ export default {
   display: flex;
   .channel {
     display: block;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
     padding: 0.5rem 0.25rem;
     &:last-of-type {
       margin: 0;
