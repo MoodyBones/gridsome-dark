@@ -33,7 +33,7 @@
           <li class="">Markdown | GraphQL</li>
           <li class="">Responsive Layout | 2 Pages</li>
           <li class="">#LosFuerLesbos #LeaveNoOneBehind</li>
-          <li class="self-end pt-8">
+          <li>
             <a href="https://losfuerlesbos.com/">
               <svg
                 class="w-12 h-12"
@@ -103,7 +103,7 @@
           <li class="">Netlify CMS | GraphQL</li>
           <li class="">i18n | DE/EN</li>
           <li class="">Responsive Design & Layout | 7 Pages</li>
-          <li class="self-end pt-8">
+          <li>
             <a href="https://stiftung-seenotrettung.org/de/">
               <svg
                 class="w-12 h-12"
@@ -126,7 +126,7 @@
     </div>
     <div class="bg-theme-white image-wrapper-project">
       <a
-        class="flex flex-col md:flex-row justify-center items-center "
+        class="flex flex-col md:flex-row justify-center items-center gap-y-16 "
         href="https://stiftung-seenotrettung.org/de/"
       >
         <div class="image-container image-grid-3">
@@ -197,7 +197,7 @@
           <li class="">JavaScript</li>
           <li class="">Interaction Animation</li>
           <li class="">Mouse & keyboard events</li>
-          <li class="self-end  pt-8">
+          <li>
             <a href="https://codepen.io/MoodyBones/full/GRZPjva">
               <svg
                 class="w-12 h-12"
@@ -248,7 +248,8 @@ export default {
   @apply flex flex-col justify-center items-center py-32;
 
   .icon-wrapper {
-    @apply transition-colors ease-out duration-500;
+    @apply transition-all ease-out duration-500;
+    @apply scale-95 transform md:hover:scale-110;
   }
   .icon-project {
     @apply opacity-90 w-32 h-32 sm:w-48 sm:h-48;
@@ -264,20 +265,24 @@ export default {
   }
   ul {
     @apply font-light text-xl sm:text-2xl ml-10 leading-loose flex flex-col;
+    li:last-child {
+      @apply transition-all ease-out duration-500;
+      @apply self-end pt-8 transform md:hover:translate-x-2;
+    }
   }
 }
 .image-wrapper-project {
-  @apply col-span-full flex flex-col justify-center items-center py-10 md:py-32 md:px-20;
+  @apply col-span-full flex flex-col justify-center items-center py-20 md:py-32 md:px-20;
 
   .image-container {
     @apply transition-all ease-out duration-500;
-    @apply opacity-95 px-4 py-10 md:py-6 md:px-4 md:hover:opacity-100;
+    @apply opacity-95 px-6 py-10 md:py-6 md:px-4 md:hover:opacity-100;
   }
   .image-project {
     @apply w-full h-auto rounded shadow-2xl;
   }
   .image-grid-3 {
-    @apply md:w-1/3 scale-100 transform md:hover:scale-110;
+    @apply md:w-1/3 md:scale-95 transform md:hover:-translate-y-2 md:hover:scale-100;
   }
   .gif {
     perspective: 1000px;
