@@ -65,8 +65,11 @@ export default {
   },
   methods: {
     onScroll() {
+      // Get the current scroll position
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
+
+      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
       if (currentScrollPosition < 0) {
         return
       }
@@ -75,7 +78,11 @@ export default {
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
         return
       }
+
+      // Here we determine whether we need to show or hide the navbar
       this.showNavbar = currentScrollPosition < this.lastScrollPosition
+
+      // Set the current scroll position as the last scroll position
       this.lastScrollPosition = currentScrollPosition
     },
   },
