@@ -34,6 +34,7 @@
         <g-image
           src="~/assets/hand-eva-goncalves.png"
           class="w-full h-auto z-10 opacity-75"
+          immediate="true"
         >
         </g-image>
       </div>
@@ -127,7 +128,7 @@ export default {
 }
 
 .hero-text-wrapper {
-  /* clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%); */
+  clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%);
   p:first-child {
     @apply text-5xl;
   }
