@@ -55,10 +55,15 @@
       </article>
     </div>
     <div class="bg-theme-white image-wrapper-project">
-      <a class="image-container" href="https://losfuerlesbos.com/">
+      <a
+        class="image-container max-w-screen-lg"
+        href="https://losfuerlesbos.com/"
+      >
         <g-image
           src="@/assets/los-fuer-lesbos-dark.jpg"
           class="image-project"
+          width="996"
+          height="790"
         ></g-image>
       </a>
       <h3 class="text-theme-red">
@@ -128,18 +133,24 @@
           <g-image
             src="@/assets/stiftungsfonds-index.jpg"
             class="image-project"
+            width="352"
+            height="283"
           ></g-image>
         </div>
         <div class="image-container image-grid-3">
           <g-image
             src="@/assets/stiftungsfonds-orgs.jpg"
             class="image-project"
+            width="352"
+            height="302"
           ></g-image>
         </div>
         <div class="image-container image-grid-3">
           <g-image
             src="@/assets/stiftungsfonds-projects.jpg"
             class="image-project"
+            width="352"
+            height="263"
           ></g-image>
         </div>
       </a>
@@ -215,6 +226,8 @@
         <g-image
           src="@/assets/game-2048.gif"
           class="image-project gif"
+          width="428"
+          height="647"
         ></g-image>
       </a>
       <h3 class="text-theme-red">
@@ -258,13 +271,13 @@ export default {
 
   .image-container {
     @apply transition-all ease-out duration-500;
-    @apply opacity-95 px-4 py-10 md:py-6 md:px-10 md:hover:opacity-100;
+    @apply opacity-95 px-4 py-10 md:py-6 md:px-4 md:hover:opacity-100;
   }
   .image-project {
-    @apply w-full h-auto rounded shadow-xl;
+    @apply w-full h-auto rounded shadow-2xl;
   }
   .image-grid-3 {
-    @apply md:w-1/3 scale-100 transform md:hover:scale-125;
+    @apply md:w-1/3 scale-100 transform md:hover:scale-110;
   }
   .gif {
     perspective: 1000px;
