@@ -261,7 +261,7 @@ export default {
   @apply md:hover:bg-opacity-50;
 
   .heading-project {
-    @apply font-display font-bold leading-tight w-min-content text-4xl sm:text-5xl py-10;
+    @apply font-display font-bold leading-tight w-min-content text-5xl py-10;
   }
   ul {
     @apply font-light text-xl sm:text-2xl ml-10 leading-loose flex flex-col;
