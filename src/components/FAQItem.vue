@@ -11,7 +11,7 @@
     <span class="py-6 self-center">
       <Chevron
         :class="item.isOpen ? 'rotate-90' : 'rotate-0'"
-        class="transition ease-out duration-200 
+        class="transition ease-in-out duration-200 
         transform w-10 md:w-12 h-10 md:h-12 mx-4"
       />
     </span>
@@ -22,22 +22,25 @@
     >
       {{ item.question }}
     </span>
-    <div
-      v-show="item.isOpen"
-      class="bg-white col-span-2 
-          pt-6 pb-8 space-y-6
+    <transition name="fade">
+      <div
+        v-show="item.isOpen"
+        :class="[item.isOpen ? '' : blurClass, bkClass]"
+        class="bg-white col-span-2 
+          pt-8 pb-10 space-y-6
         grid grid-cols-1fr-11fr
-        text-lg md:text-xl tracking-wide leading-loose pr-6 md:pr-12
+        text-lg md:text-2xl tracking-wide leading-loose pr-6 md:pr-12
         sm:max-w-screen-sm md:max-w-screen-md"
-    >
-      <p
-        v-for="(answer, answerIndex) in item.answer"
-        :key="`answer-${index}-${answerIndex}`"
-        class="col-start-2 "
       >
-        {{ answer }}
-      </p>
-    </div>
+        <p
+          v-for="(answer, answerIndex) in item.answer"
+          :key="`answer-${index}-${answerIndex}`"
+          class="col-start-2 "
+        >
+          {{ answer }}
+        </p>
+      </div>
+    </transition>
   </article>
 </template>
 
@@ -48,6 +51,12 @@ export default {
   name: 'FAQItem',
   components: {
     Chevron,
+  },
+  data() {
+    return {
+      bkClass: 'bk',
+      blurClass: 'blur',
+    }
   },
   methods: {
     toggleQuestionAnswer() {
@@ -66,3 +75,26 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.fade-enter-active {
+  transition: opacity 0.25s ease-out;
+}
+.fade-leave-active {
+  transition: opacity 0.25s ease-in;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.bk {
+  transition: all 0.1s ease-out;
+}
+
+.blur {
+  filter: blur(2px);
+  opacity: 0.4;
+}
+</style>
