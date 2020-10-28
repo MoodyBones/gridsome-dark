@@ -107,6 +107,15 @@ module.exports = {
           '900': '#212121',
         },
       },
+      fontSize: {
+        '6xl': [
+          '4rem',
+          {
+            letterSpacing: '-0.02em',
+            lineHeight: '1.1',
+          },
+        ],
+      },
       gridColumnEnd: {
         '-1': '-1',
       },

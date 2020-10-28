@@ -1,13 +1,13 @@
 <template>
-  <header class="navbar" :class="{ 'hidden-navbar': !showNavbar }">
+  <header
+    class="navbar bg-theme-white bg-opacity-95 border-b-2 border-gray-700 z-50 shadow-sm"
+    :class="{ 'hidden-navbar': !showNavbar }"
+  >
     <transition name="fade">
-      <nav class="z-50 flex justify-between items-start px-5 sm:px-10 py-6 ">
-        <g-link
-          to="/"
-          tag="h1"
-          class="name font-mono lowercase tracking-wide"
-          :class="{ first: data.first_letter_only }"
-        >
+      <nav
+        class="flex justify-between items-center py-3 px-5 sm:px-10 md:px-32 text-gray-800"
+      >
+        <g-link to="/" class="flex items-center">
           <svg
             class="w-24 h-24"
             width="175"
@@ -27,12 +27,17 @@
               </clipPath>
             </defs>
           </svg>
+          <div class="pl-5 md:pl-8 tracking-widest">
+            Front-end Developer
+          </div>
         </g-link>
-        <div class="contact flex pt-2">
+        <div class="contact flex ">
           <Smiley
             class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-in duration-150"
           />
-          <a class="link uppercase text-lg" :href="`mailto:${data.email}`"
+          <a
+            class="link uppercase text-lg tracking-wide "
+            :href="`mailto:${data.email}`"
             >say hi !</a
           >
         </div>

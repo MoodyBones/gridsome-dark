@@ -1,69 +1,89 @@
 <template>
-  <div
-    class="hero-grid-wrapper container max-w-screen-xl mx-auto
+  <div class="bg-theme-purple">
+    <div
+      class="hero-grid-wrapper container max-w-screen-xl mx-auto
     grid grid-cols-1 md:grid-cols-2 md:grid-rows-3"
-  >
-    <div
-      class="hero-bg-wrapper bg-theme-purple
+    >
+      <div
+        class="hero-bg-wrapper bg-theme-purple
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3
-      sticky top-8 z-20 h-screen-90"
-    >
-      <!-- <div class="clip-path-purple opacity-25"></div> -->
-    </div>
-    <div
-      class="flex items-center justify-center 
+      sticky top-0 z-20 h-screen-90"
+      ></div>
+      <div
+        class="flex flex-col items-end justify-center pt-32 pb-20
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2
-      sticky top-8 z-30
+      sticky top-0 z-30
+      text-6xl font-display font-bold
     "
-    >
-      <h1
-        class="text-6xl sm:text-7xl lg:text-8xl font-display font-bold opacity-90 tracking-tighter leading-none px-10 sm:px-20 lg:px-24"
       >
-        {{ data.hero_title[0] }}
-        <br />
-        {{ data.hero_title[1] }}
-      </h1>
-    </div>
-    <div
-      class="hero-image-wrapper 
-      row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
-      sticky top-8 z-30 h-screen-80
-      flex justify-center items-center"
-    >
-      <div class="w-48 md:w-56 h-auto animate-wiggle">
-        <g-image
-          src="~/assets/hand-eva-goncalves.png"
-          class="w-full h-auto z-10 opacity-75"
-          immediate="true"
+        <h1
+          class="bg-theme-white w-min-content border-4 border-theme-black
+          p-6 sm:p-10 lg:p-10 md:mr-6 shadow-sm rounded-sm
+          transform -rotate-2 z-10
+          transition-all ease-out duration-300
+          opacity-90 md:hover:opacity-100 md:hover:rotate-0"
         >
-        </g-image>
+          {{ data.hero_title[0] }}
+        </h1>
+        <h1
+          class="bg-theme-orange text-theme-red text-center border-4 border-theme-red
+          p-20 md:mr-6 rounded-full shadow-sm
+          transform rotate-2
+          transition-all ease-out duration-300
+          opacity-90 md:hover:opacity-100 md:hover:rotate-0"
+        >
+          {{ data.hero_title[1] }}
+          <br />
+          {{ data.hero_title[2] }}
+          <br />
+          {{ data.hero_title[3] }}
+          <br />
+          {{ data.hero_title[4] }}
+        </h1>
       </div>
-    </div>
-    <div
-      class="hero-text-wrapper z-30 
+      <div
+        class="hero-image-wrapper 
+      row-span-1 col-span-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
+      sticky top-0 z-30 h-screen-80
+      flex justify-start items-start md:justify-start md:items-center"
+      >
+        <div class="w-32 md:w-64 h-auto animate-wiggle ml-6 mt-10 md:ml-0">
+          <g-image
+            src="~/assets/hand-eva-goncalves.png"
+            class="w-full h-auto z-10 opacity-90"
+            immediate="true"
+          >
+          </g-image>
+        </div>
+      </div>
+      <div
+        class="hero-text-wrapper z-30 
       row-start-3 md:row-start-2 md:col-start-2 md:row-span-2
       bg-theme-black
       opacity-95 rounded-sm
       px-8 md:px-20 
       py-40 space-y-16
       "
-    >
-      <p
-        v-for="(sub, i) in data.hero_subtitle"
-        :key="sub[i]"
-        class="text-2xl md:text-3xl text-gray-400 font-light leading-relaxed"
       >
-        {{ sub }}
-      </p>
-      <p class="text-2xl md:text-3xl text-gray-400 font-light leading-relaxed ">
-        Any time you want,
-        <a
-          :href="`mailto:${data.email}`"
-          class="underline md:hover:text-gray-100"
+        <p
+          v-for="(sub, i) in data.hero_subtitle"
+          :key="sub[i]"
+          class="text-2xl md:text-3xl text-gray-400 font-light leading-relaxed"
         >
-          say hi!
-        </a>
-      </p>
+          {{ sub }}
+        </p>
+        <p
+          class="text-2xl md:text-3xl text-gray-400 font-light leading-relaxed "
+        >
+          Any time you want,
+          <a
+            :href="`mailto:${data.email}`"
+            class="underline md:hover:text-gray-100"
+          >
+            say hi!
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 </template>

@@ -3,7 +3,13 @@
   "header_title": "Mel Jones",
   "first_letter_only": true,
   "email": "jones.mel@gmail.com",
-  "hero_title": ["I love learning.", "I really ❤️️ building WEB stuff."],
+  "hero_title": [
+    "I love learning.",
+    "I really ❤️️",
+    "building",
+    "WEB",
+    "stuff."
+  ],
   "hero_subtitle": [
     "Heya!",
     "I'm Mel, a front-end developer based in Berlin.",
