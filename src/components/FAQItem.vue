@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     toggleQuestionAnswer() {
-      this.item.isOpen ? (this.item.isOpen = false) : (this.item.isOpen = true)
+      this.item.isOpen = !this.item.isOpen
     },
   },
   props: {
@@ -90,7 +90,7 @@ export default {
 }
 
 .bk {
-  transition: all 0.1s ease-out;
+  transition: all 0.1s ease-in;
 }
 
 .blur {
