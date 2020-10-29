@@ -2,9 +2,14 @@
   <section
     class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto grid-flow-row-dense"
   >
-    <div class="bg-theme-blue wrapper-project">
+    <div class="carousel text-theme-orange pt-64">
+      <h1 class="right">
+        Projects
+      </h1>
+    </div>
+    <div class=" bg-gray-100 wrapper-project">
       <a
-        class="icon-wrapper md:hover:text-theme-pink"
+        class="icon-wrapper text-theme-orange"
         href="https://losfuerlesbos.com/"
       >
         <svg
@@ -23,7 +28,7 @@
         </svg>
       </a>
     </div>
-    <div class="bg-theme-pink wrapper-project heading-wrapper-project">
+    <div class="bg-theme-orange wrapper-project heading-wrapper-project">
       <article>
         <h2 class="heading-project">Los Für Lesbos</h2>
         <ul class="">
@@ -35,44 +40,34 @@
           <li class="">#LosFuerLesbos #LeaveNoOneBehind</li>
           <li>
             <a href="https://losfuerlesbos.com/">
-              <svg
-                class="w-12 h-12"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
+              <ChevronDown class="w-16 h-16" />
             </a>
           </li>
         </ul>
       </article>
     </div>
     <div class="bg-theme-white image-wrapper-project">
-      <a
-        class="image-container max-w-screen-lg"
-        href="https://losfuerlesbos.com/"
-      >
+      <div class="image-container max-w-screen-lg">
         <g-image
           src="@/assets/los-fuer-lesbos-dark.jpg"
           class="image-project"
           width="996"
           height="790"
         ></g-image>
-      </a>
-      <h3 class="text-theme-red">
+      </div>
+      <h3 class="text-theme-orange">
         for Sea-Watch.org
       </h3>
     </div>
-    <div class="bg-blue-100 wrapper-project md:col-start-2 md:col-end-3">
+    <div class="carousel text-theme-blue">
+      <h1 class="left">
+        Projects
+      </h1>
+    </div>
+    <!-- bg-blue-100 -->
+    <div class="bg-gray-100 wrapper-project md:col-start-2 md:col-end-3">
       <a
-        class="icon-wrapper md:hover:text-gray-500"
+        class="icon-wrapper text-theme-blue"
         href="https://stiftung-seenotrettung.org/de/"
       >
         <svg
@@ -91,7 +86,7 @@
         </svg>
       </a>
     </div>
-    <div class="bg-gray-500 wrapper-project heading-wrapper-project md:">
+    <div class="bg-theme-blue wrapper-project heading-wrapper-project md:">
       <article>
         <h2 class="heading-project">
           Stiftungsfonds Zivile Seenotrettung
@@ -105,29 +100,15 @@
           <li class="">Responsive Design & Layout | 7 Pages</li>
           <li>
             <a href="https://stiftung-seenotrettung.org/de/">
-              <svg
-                class="w-12 h-12"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
+              <ChevronDown class="w-16 h-16" />
             </a>
           </li>
         </ul>
       </article>
     </div>
     <div class="bg-theme-white image-wrapper-project">
-      <a
+      <div
         class="flex flex-col md:flex-row justify-center items-center gap-y-16 "
-        href="https://stiftung-seenotrettung.org/de/"
       >
         <div class="image-container image-grid-3">
           <g-image
@@ -153,14 +134,20 @@
             height="263"
           ></g-image>
         </div>
-      </a>
-      <h3 class="text-theme-red">
+      </div>
+      <h3 class="text-theme-blue">
         for Sea-Watch.org
       </h3>
     </div>
-    <div class="bg-theme-purple wrapper-project">
+    <div class="carousel text-theme-purple">
+      <h1 class="right">
+        Projects
+      </h1>
+    </div>
+    <!-- bg-theme-purple  -->
+    <div class="bg-gray-100 wrapper-project">
       <a
-        class="icon-wrapper md:hover:text-theme-orange"
+        class="icon-wrapper text-theme-purple"
         href="https://codepen.io/MoodyBones/full/GRZPjva"
       >
         <svg
@@ -185,7 +172,7 @@
         </svg>
       </a>
     </div>
-    <div class="bg-theme-orange wrapper-project heading-wrapper-project">
+    <div class="bg-theme-purple wrapper-project heading-wrapper-project">
       <article>
         <h2 class="heading-project">
           2048 Game
@@ -199,38 +186,22 @@
           <li class="">Mouse & keyboard events</li>
           <li>
             <a href="https://codepen.io/MoodyBones/full/GRZPjva">
-              <svg
-                class="w-12 h-12"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
+              <ChevronDown class="w-16 h-16" />
             </a>
           </li>
         </ul>
       </article>
     </div>
     <div class="bg-theme-white image-wrapper-project">
-      <a
-        class="image-container md:w-2/5"
-        href="https://codepen.io/MoodyBones/full/GRZPjva"
-      >
+      <div class="image-container md:w-2/5">
         <g-image
           src="@/assets/game-2048.gif"
           class="image-project gif"
           width="428"
           height="647"
         ></g-image>
-      </a>
-      <h3 class="text-theme-red">
+      </div>
+      <h3 class="text-theme-purple">
         for Fun
       </h3>
     </div>
@@ -238,21 +209,30 @@
 </template>
 
 <script>
+import ChevronDown from '@/assets/chevron-down.svg'
+
 export default {
   name: 'ProjectSection',
+  components: {
+    ChevronDown,
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .wrapper-project {
   @apply flex flex-col justify-center items-center py-32;
-
   .icon-wrapper {
     @apply transition-all ease-out duration-500;
-    @apply scale-95 transform md:hover:scale-110;
+    @apply scale-95 transform;
   }
   .icon-project {
-    @apply opacity-90 w-32 h-32 sm:w-48 sm:h-48;
+    @apply scale-90 opacity-90 w-32 h-32 sm:w-48 sm:h-48;
+  }
+  &:hover {
+    .icon-wrapper {
+      @apply md:scale-100 md:text-theme-black;
+    }
   }
 }
 
@@ -261,25 +241,26 @@ export default {
   @apply bg-opacity-50 md:bg-opacity-100 md:hover:bg-opacity-50;
 
   .heading-project {
-    @apply font-display font-bold leading-tight w-min-content text-5xl py-10;
+    @apply font-display font-bold leading-none w-min-content text-5xl py-10;
+    @apply transition-all ease-out duration-300 transform -rotate-2 z-10;
   }
   ul {
     @apply font-light text-xl sm:text-2xl ml-10 leading-loose flex flex-col;
     li:last-child {
       @apply transition-all ease-out duration-500;
-      @apply self-end pt-8 transform md:hover:translate-x-2;
+      @apply self-end pt-8 transform md:hover:translate-x-2 md:hover:-rotate-90;
     }
   }
 }
 .image-wrapper-project {
-  @apply col-span-full flex flex-col justify-center items-center py-20 md:py-32 md:px-20;
+  @apply col-span-full flex flex-col justify-center items-center py-20 md:py-56 md:px-20;
 
   .image-container {
     @apply transition-all ease-out duration-500;
-    @apply opacity-95 px-6 py-10 md:py-6 md:px-4 md:hover:opacity-100;
+    @apply max-w-5xl opacity-95 px-6 py-10 md:py-6 md:px-4 md:hover:opacity-100;
   }
   .image-project {
-    @apply w-full h-auto rounded-sm shadow-2xl;
+    @apply w-full h-auto rounded-sm shadow-lg;
   }
   .image-grid-3 {
     @apply md:w-1/3 md:scale-95 transform md:hover:-translate-y-2 md:hover:scale-100;
@@ -290,6 +271,69 @@ export default {
   }
   h3 {
     @apply opacity-90 font-display text-2xl sm:text-3xl my-10;
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  @apply md:col-span-2 bg-theme-white shadow-sm;
+
+  h1 {
+    @apply font-display uppercase font-bold tracking-wide text-7xl py-4 opacity-50;
+  }
+
+  .right {
+    animation: moveCarouselRight 14s linear infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .left {
+    text-align: right;
+    animation: moveCarouselLeft 14s linear infinite;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes moveCarouselRight {
+  100% {
+    transform: translate3d(200%, 0, 0);
+  }
+}
+@keyframes moveCarouselLeft {
+  100% {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+
+.icon-project:hover {
+  animation: shake 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  /* forCSS hardware accelerate 
+  add any of these 3 below, */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
 </style>
