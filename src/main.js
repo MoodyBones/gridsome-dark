@@ -13,6 +13,7 @@ import {
   faSpotify,
 } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import VueScrollTo from 'vue-scrollto'
 
 config.autoAddCss = false
 library.add(faGithub, faTwitter, faCodepen, faLinkedin, faSpotify)
@@ -21,4 +22,8 @@ export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome', FontAwesomeIcon)
+  Vue.use(VueScrollTo, {
+    duration: 500,
+    easing: 'ease',
+  })
 }
