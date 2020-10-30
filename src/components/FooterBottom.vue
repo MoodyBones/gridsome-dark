@@ -68,7 +68,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  @apply antialiased;
+  @apply antialiased text-theme-white;
 }
 
 .heading-2xl-footer {
