@@ -76,16 +76,15 @@ export default {
   text-align: center;
   font-weight: 700;
   line-height: 0;
-  padding: 0.5rem 0.25rem;
+  padding: 0 0.5rem;
 }
 .social {
   display: flex;
   .channel {
     display: block;
-    margin: 0 0.5rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0 0.5rem;
     &:last-of-type {
-      margin: 0;
+      padding-right: 0;
     }
     svg {
       @apply w-5 h-5 opacity-90 transition-all duration-500 ease-in-out;
@@ -105,6 +104,6 @@ export default {
 
 .icon-circle {
   @apply transition-all duration-500 ease-in-out;
-  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-75 md:hover:opacity-90 shadow-sm text-theme-white;
+  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-95 md:opacity-80 md:hover:opacity-100 shadow-sm text-theme-white;
 }
 </style>
