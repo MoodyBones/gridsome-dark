@@ -1,5 +1,6 @@
 <template>
   <section
+    id="work-section"
     class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto grid-flow-row-dense"
   >
     <div class="carousel text-theme-orange">
@@ -7,7 +8,7 @@
         Project One
       </h1>
     </div>
-    <div class=" bg-gray-100 wrapper-project">
+    <div class="bg-gradient-to-b from-gray-100 wrapper-project">
       <div class="icon-wrapper text-theme-orange">
         <svg
           class="icon-project"
@@ -64,8 +65,9 @@
         Project Two
       </h1>
     </div>
-    <!-- bg-blue-100 -->
-    <div class="bg-gray-100 wrapper-project md:col-start-2 md:col-end-3">
+    <div
+      class="bg-gradient-to-b from-gray-100 wrapper-project md:col-start-2 md:col-end-3"
+    >
       <div class="icon-wrapper text-theme-blue">
         <svg
           class="icon-project"
@@ -142,7 +144,7 @@
         Project Three
       </h1>
     </div>
-    <div class="bg-gray-100 wrapper-project">
+    <div class="bg-gradient-to-b from-gray-100 wrapper-project">
       <div class="icon-wrapper text-theme-green">
         <svg
           class="icon-project"
@@ -198,7 +200,7 @@
           height="647"
         ></g-image>
       </a>
-      <h3 class="text-theme-purple">
+      <h3 class="text-theme-green">
         for Fun
       </h3>
     </div>
@@ -228,17 +230,21 @@ export default {
   }
   &:hover {
     .icon-wrapper {
-      @apply md:scale-100 md:text-theme-black;
+      @apply md:scale-100 md:opacity-50;
     }
   }
 }
 
 .heading-wrapper-project {
   @apply transition-all ease-out duration-500 px-12;
-  @apply bg-opacity-50 md:bg-opacity-100 md:hover:bg-opacity-50;
+  @apply text-theme-white;
+
+  .meta-project {
+    @apply flex flex-row;
+  }
 
   .heading-project {
-    @apply font-display font-bold leading-none w-min-content text-4xl md:text-5xl opacity-95 py-10;
+    @apply font-display font-bold leading-none w-min-content text-4xl md:text-5xl opacity-95 pb-16;
     @apply transition-all ease-out duration-300 transform -rotate-2 z-10;
   }
   .list-project {
@@ -254,6 +260,7 @@ export default {
       @apply md:rotate-0;
     }
     .list-project {
+      @apply md:opacity-95;
       li:last-child {
         @apply transform md:translate-y-2 md:scale-110;
       }
