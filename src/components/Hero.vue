@@ -104,46 +104,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-bg-wrapper {
-  /* mix-blend-mode: difference; */
-  /* background-color: var(--theme-purple); */
-  /* background: radial-gradient(
-      ellipse at top left,
-      transparent,
-      #cd84f1,
-      #ffcccc,
-      #ff4d4d,
-      #ffaf40
-    ),
-    radial-gradient(
-      ellipse at center,
-      transparent,
-      #cd84f1,
-      #ffcccc,
-      #ff4d4d,
-      #ffaf40
-    ),
-    radial-gradient(
-      ellipse at bottom right,
-      #ffaf40,
-      #ff4d4d,
-      #ffcccc,
-      #cd84f1,
-      transparent
-    );
-
-  background-size: 300%;
-  background-position: left; */
-  /* transform: translate3d(s-100px, 0, 0); */
-
-  /* animation: bg-animation 10s infinite alternate; */
-  /* perspective: 1000px;
-  backface-visibility: hidden; */
-}
-
 .hero-image-wrapper {
   /* mix-blend-mode: difference; */
-  /* animation: shimmy 6s 3 alternate; */
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
   backface-visibility: hidden;
@@ -153,28 +115,6 @@ export default {
   clip-path: polygon(0 0px, 100% 40px, 100% 100%, 0 100%);
   p:first-child {
     @apply text-5xl;
-  }
-}
-
-@keyframes bg-animation {
-  100% {
-    /* transform: translate3d(100px, 0, 0); */
-    background-position: right;
-  }
-}
-
-@keyframes shimmy {
-  20% {
-    transform: translate3d(0, -20px, 0);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
-  80% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(-10deg);
   }
 }
 </style>
