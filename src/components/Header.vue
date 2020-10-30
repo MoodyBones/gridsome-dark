@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navbar bg-theme-white bg-opacity-95 border-b-2 border-gray-700 z-50 shadow-sm"
+    class="navbar bg-theme-white bg-opacity-95 z-50 shadow-sm"
     :class="{ 'hidden-navbar': !showNavbar }"
   >
     <transition name="fade">
