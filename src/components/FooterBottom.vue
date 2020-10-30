@@ -14,18 +14,20 @@
         :key="`${social.channel}-${index}`"
       >
         <a
-          class="flex flex-col items-start pointer link-bounce-footer"
+          class="link-list-footer"
           :href="
             `https://${social.urlStart}${social.channel}.com/${social.handle}`
           "
         >
-          <span class="icon block text-3xl py-3">
-            <font-awesome class="" :icon="['fab', `${social.channel}`]" />
-          </span>
-          <span class="text-lg-footer">
+          <div class="icon-circle">
+            <span class="icon block text-2xl py-3">
+              <font-awesome class="" :icon="['fab', `${social.channel}`]" />
+            </span>
+          </div>
+          <span class="text-footer">
             {{ social.text }}
           </span>
-          <span class="heading-2xl-footer">
+          <span class="heading-footer">
             {{ social.channel }}
           </span>
         </a>
@@ -36,11 +38,11 @@
         :key="`${item.name}-${index}`"
         :class="item.layoutWide ? 'md:col-span-4 -col-end-1' : 'col-span-1'"
       >
-        <a class="flex flex-col pointer link-bounce-footer" :href="item.url">
-          <span class="text-lg-footer">
+        <a class="link-list-footer" :href="item.url">
+          <span class="text-footer">
             {{ item.text }}
           </span>
-          <span class="heading-2xl-footer">
+          <span class="heading-footer">
             {{ item.name }}
           </span>
         </a>
@@ -71,21 +73,27 @@ footer {
   @apply antialiased text-theme-white;
 }
 
-.heading-2xl-footer {
-  @apply font-display text-2xl capitalize tracking-wide pt-2;
+.heading-footer {
+  @apply font-display text-2xl capitalize tracking-wider pt-4;
 }
 
-.text-lg-footer {
-  @apply text-lg tracking-wide leading-relaxed;
+.text-footer {
+  @apply text-lg tracking-wide leading-relaxed text-center md:text-left;
 }
-.link-bounce-footer {
+.link-list-footer {
+  @apply flex flex-col items-center md:items-start;
   .icon {
-    @apply transition-all duration-500 ease-out;
+    @apply transition-all duration-500 ease-out scale-90;
   }
   &:hover {
-    .icon {
-      @apply transform scale-110 -translate-y-2;
+    .icon-circle {
+      @apply transform opacity-90 scale-110 -translate-y-1;
     }
   }
+}
+
+.icon-circle {
+  @apply transition-all duration-500 ease-in-out;
+  @apply border-2 flex items-center justify-center w-12 h-12 rounded-full mb-3 opacity-75;
 }
 </style>
