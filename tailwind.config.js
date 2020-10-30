@@ -95,6 +95,15 @@ module.exports = {
           }
           return `rgb(var(--theme-orange))`
         },
+        'theme-green': ({ opacityVariable, opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(var(--theme-green), ${opacityValue})`
+          }
+          if (opacityVariable !== undefined) {
+            return `rgba(var(--theme-green), var(${opacityVariable}, 1))`
+          }
+          return `rgb(var(--theme-green))`
+        },
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
