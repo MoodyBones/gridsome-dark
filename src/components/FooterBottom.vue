@@ -83,6 +83,13 @@ footer {
 .link-list-footer {
   @apply flex flex-col items-center md:items-start;
   .icon {
+    transform: translate3d(
+      0,
+      0,
+      0
+    ); // this tells it to be hardware accelerated from the beginning
+    perspective: 1000px; // this will hardware accelerate
+    backface-visibility: hidden;
     @apply transition-all duration-500 ease-out scale-90;
   }
   &:hover {
@@ -93,6 +100,13 @@ footer {
 }
 
 .icon-circle {
+  transform: translate3d(
+    0,
+    0,
+    0
+  ); // this tells it to be hardware accelerated from the beginning
+  perspective: 1000px; // this will hardware accelerate
+  backface-visibility: hidden;
   @apply transition-all duration-500 ease-in-out;
   @apply border-2 flex items-center justify-center w-12 h-12 rounded-full mb-3 opacity-75;
 }

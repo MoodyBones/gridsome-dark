@@ -104,6 +104,6 @@ export default {
 
 .icon-circle {
   @apply transition-all duration-500 ease-in-out;
-  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-95 md:opacity-80 md:hover:opacity-100 shadow-sm text-theme-white;
+  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-95 md:opacity-90 md:hover:opacity-95 shadow-sm text-theme-white;
 }
 </style>

@@ -13,7 +13,7 @@
         class="flex flex-col items-end justify-center pt-32 pb-20
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2
       sticky top-0 z-30
-      text-6xl font-display font-bold
+      text-5xl md:text-6xl font-display font-bold
     "
       >
         <h1

@@ -55,6 +55,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.icon-faq {
+  perspective: 1000px; // this will hardware accelerate
+  backface-visibility: hidden;
+}
+
 #faq-section:hover {
   .icon-faq {
     @apply md:scale-125;

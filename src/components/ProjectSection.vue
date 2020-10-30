@@ -190,7 +190,7 @@
     </div>
     <div id="image-project-three" class="bg-theme-white image-wrapper-project">
       <a
-        class="image-container md:w-2/5"
+        class="image-container w-3/4 md:w-1/4"
         href="https://codepen.io/MoodyBones/full/GRZPjva"
       >
         <g-image
@@ -227,6 +227,13 @@ export default {
   }
   .icon-project {
     @apply scale-90 opacity-90 w-32 h-32 sm:w-48 sm:h-48;
+    transform: translate3d(
+      0,
+      0,
+      0
+    ); // this tells it to be hardware accelerated from the beginning
+    perspective: 1000px; // this will hardware accelerate
+    backface-visibility: hidden;
   }
   &:hover {
     .icon-wrapper {
@@ -248,11 +255,11 @@ export default {
     @apply transition-all ease-out duration-300 transform -rotate-2 z-10;
   }
   .list-project {
-    @apply tracking-wide text-xl sm:text-2xl ml-10 leading-loose flex flex-col opacity-75;
+    @apply tracking-wide text-xl sm:text-2xl font-bold tracking-wide ml-10 leading-loose flex flex-col opacity-80;
 
     li:last-child {
       @apply transition-all ease-out duration-500;
-      @apply w-16 h-16 self-center pt-8 translate-y-0 scale-90  opacity-95;
+      @apply w-16 h-16 self-center pt-8 translate-y-0 scale-90 opacity-95;
     }
   }
   &:hover {
@@ -273,13 +280,23 @@ export default {
 
   .image-container {
     @apply transition-all ease-out duration-500;
-    @apply max-w-5xl opacity-95 px-6 py-10 md:py-6 md:px-4 md:hover:opacity-100;
+    @apply max-w-5xl px-6 py-10 md:py-6 md:px-4;
   }
   .image-project {
+    transform: translate3d(
+      0,
+      0,
+      0
+    ); // this tells it to be hardware accelerated from the beginning
+    perspective: 1000px; // this will hardware accelerate
+    backface-visibility: hidden;
     @apply w-full h-auto rounded-sm shadow-lg;
   }
   .image-grid-3 {
-    @apply md:w-1/3 md:scale-95 transform md:hover:-translate-y-2 md:hover:scale-100;
+    @apply md:w-1/3 md:scale-95 transform md:hover:scale-100;
+  }
+  .image-long {
+    @apply max-h-screen;
   }
   .gif {
     perspective: 1000px;
