@@ -40,6 +40,13 @@
             :href="`mailto:${data.email}`"
             >say hi !</a
           >
+          <a
+            href="#"
+            v-scroll-to="'#work-section'"
+            class="link uppercase text-lg tracking-wide ml-4 md:ml-16"
+          >
+            work
+          </a>
         </div>
       </nav>
     </transition>
