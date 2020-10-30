@@ -17,8 +17,8 @@
     "
       >
         <h1
-          class="bg-theme-orange w-min-content 
-          p-6 sm:p-10 lg:p-10 md:mr-6 shadow-sm rounded
+          class="bg-theme-black w-min-content text-theme-white
+          p-6 sm:p-10 lg:p-10 md:mr-6 shadow rounded
           transform -rotate-2 z-10 mr-4
           transition-all ease-out duration-300
           opacity-90 md:hover:opacity-100 md:hover:rotate-0"
@@ -26,8 +26,8 @@
           {{ data.hero_title[0] }}
         </h1>
         <h1
-          class="bg-pink-200 text-theme-red text-center 
-          p-20 md:mr-6 rounded-full shadow-sm
+          class="bg-theme-white text-center
+          p-20 md:mr-6 rounded-full shadow
           transform rotate-2 mr-2
           transition-all ease-out duration-300
           opacity-90 md:hover:opacity-100 md:hover:rotate-0"
@@ -45,9 +45,9 @@
         class="hero-image-wrapper 
       row-start-1 col-start-1 md:row-start-1 md:row-end-2 md:col-start-2 md:col-end-3
       sticky top-0 z-30 h-screen-80
-      flex justify-start items-start md:justify-start md:items-end"
+      flex justify-start items-start md:justify-start md:items-center"
       >
-        <div class="w-32 md:w-64 h-auto animate-wiggle ml-6 mt-32 md:ml-0">
+        <div class="w-32 md:w-64 h-auto animate-wiggle ml-6 mt-32 md:ml-16">
           <g-image
             src="~/assets/hand-eva-goncalves.png"
             class="w-full h-auto z-10 opacity-90"
