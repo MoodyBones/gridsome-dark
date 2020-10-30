@@ -117,6 +117,13 @@ module.exports = {
         },
       },
       fontSize: {
+        '5xl': [
+          '3.5rem',
+          {
+            letterSpacing: '-0.02em',
+            lineHeight: '1.1',
+          },
+        ],
         '6xl': [
           '4rem',
           {
