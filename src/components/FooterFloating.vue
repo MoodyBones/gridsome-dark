@@ -8,7 +8,7 @@
       @click="scrollTopTop"
     >
       <svg
-        class="w-8 h-8 opacity-90"
+        class="w-6 h-6 opacity-90"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -69,7 +69,6 @@ export default {
   justify-content: space-between;
   align-content: center;
   z-index: 100;
-  /* mix-blend-mode: difference; */
 }
 .to-top {
   user-select: none;
@@ -89,7 +88,7 @@ export default {
       margin: 0;
     }
     svg {
-      @apply w-6 h-6 opacity-90 transition-all duration-500 ease-in-out;
+      @apply w-5 h-5 opacity-90 transition-all duration-500 ease-in-out;
     }
   }
 }
@@ -105,6 +104,7 @@ export default {
 }
 
 .icon-circle {
-  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-90 shadow-sm;
+  @apply transition-all duration-500 ease-in-out;
+  @apply flex items-center justify-center w-12 h-12 rounded-full opacity-75 md:hover:opacity-90 shadow-sm text-theme-white;
 }
 </style>
