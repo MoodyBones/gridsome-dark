@@ -27,25 +27,34 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="pl-5 md:pl-8 tracking-widest">
+          <div class="hidden md:inline-block pl-5 md:pl-8 tracking-widest">
             Front-end Developer
           </div>
         </g-link>
-        <div class="contact flex ">
-          <Smiley
-            class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-in duration-150"
-          />
-          <a
-            class="link uppercase text-lg tracking-wide "
-            :href="`mailto:${data.email}`"
-            >say hi !</a
-          >
+        <div class="flex items-center">
+          <div class="contact flex items-center">
+            <Smiley
+              class="smiley w-8 h-8 mr-3 opacity-0 transition-opacity ease-out duration-200"
+            />
+            <a
+              class="link uppercase text-lg tracking-wide "
+              :href="`mailto:${data.email}`"
+              >say hi !</a
+            >
+          </div>
           <a
             href="#"
             v-scroll-to="'#work-section'"
-            class="link uppercase text-lg tracking-wide ml-4 md:ml-16"
+            class="link uppercase text-lg tracking-wide pl-6 md:pl-16
+              "
           >
-            work
+            <span
+              class="border border-theme-black rounded block py-2 px-3
+              transition-all duration-200 ease-out
+            md:hover:bg-theme-black md:hover:text-theme-white"
+            >
+              work
+            </span>
           </a>
         </div>
       </nav>
